@@ -1,0 +1,237 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "agent-browser-mcp": {
+      "command": [
+        "npx",
+        "-y",
+        "<REDACTED>"
+      ],
+      "enabled": true,
+      "type": "local"
+    },
+    "aws-ec2-windows": {
+      "command": [
+        "/home/ubuntu/.opencode/mcp/awsec2/server.sh"
+      ],
+      "enabled": true,
+      "type": "local"
+    },
+    "better-auth": {
+      "command": [
+        "npx",
+        "-y",
+        "<REDACTED>"
+      ],
+      "enabled": true,
+      "type": "local"
+    },
+    "context7": {
+      "command": [
+        "npx",
+        "-y",
+        "<REDACTED>"
+      ],
+      "enabled": true,
+      "type": "local"
+    },
+    "discord-py-self": {
+      "command": [
+        "/home/linuxbrew/.linuxbrew/bin/python3",
+        "-m",
+        "discord_py_self_mcp.main"
+      ],
+      "enabled": true,
+      "timeout": 60000,
+      "type": "local"
+    },
+    "font-mcp": {
+      "command": [
+        "node",
+        "/home/ubuntu/mcp-servers/font-mcp/dist/index.js"
+      ],
+      "enabled": true,
+      "type": "local"
+    },
+    "grep-app": {
+      "command": [
+        "npx",
+        "-y",
+        "<REDACTED>"
+      ],
+      "enabled": true,
+      "type": "local"
+    },
+    "gsap": {
+      "command": [
+        "npx",
+        "-y",
+        "<REDACTED>"
+      ],
+      "enabled": true,
+      "type": "local"
+    },
+    "motion": {
+      "command": [
+        "npx",
+        "-y",
+        "https://api.motion.dev/registry.tgz?package=motion-studio-mcp&version=latest"
+      ],
+      "enabled": true,
+      "type": "local"
+    },
+    "kagi-search": {
+      "command": [
+        "node",
+        "/home/ubuntu/workspace/kagi-search-mcp/dist/src/mcp-server.js"
+      ],
+      "enabled": true,
+      "type": "local"
+    },
+    "mintlify": {
+      "enabled": false,
+      "type": "remote",
+      "url": "https://mintlify.com/docs/mcp"
+    },
+    "n8n-mcp": {
+      "command": [
+        "npx",
+        "-y",
+        "<REDACTED>"
+      ],
+      "enabled": true,
+      "type": "local"
+    },
+    "next-devtools": {
+      "command": [
+        "npx",
+        "-y",
+        "<REDACTED>"
+      ],
+      "enabled": true,
+      "type": "local"
+    },
+    "perplexity-webui": {
+      "enabled": true,
+      "oauth": false,
+      "timeout": 600000,
+      "type": "remote",
+      "url": "http://<REDACTED_IP>:8790/sse"
+    },
+    "qmd": {
+      "command": [
+        "qmd",
+        "mcp"
+      ],
+      "enabled": true,
+      "type": "local"
+    },
+    "registry-directory-mcp": {
+      "command": [
+        "node",
+        "/home/ubuntu/registry-directory-mcp/dist/index.js"
+      ],
+      "enabled": true,
+      "type": "local"
+    },
+    "ssh-ec2-tailscale": {
+      "command": [
+        "npx",
+        "ssh-mcp",
+        "-y",
+        "--",
+        "--host=<REDACTED>",
+        "--user=<REDACTED>",
+        "--password=<REDACTED>",
+        "--timeout=30000",
+        "--maxChars=none"
+      ],
+      "enabled": true,
+      "type": "local"
+    },
+    "ssh-local-dev": {
+      "command": [
+        "npx",
+        "ssh-mcp",
+        "-y",
+        "--",
+        "--host=<REDACTED>",
+        "--user=<REDACTED>",
+        "--key=<REDACTED_PATH>",
+        "--timeout=30000",
+        "--maxChars=none"
+      ],
+      "enabled": true,
+      "type": "local"
+    },
+    "ssh-nas": {
+      "command": [
+        "npx",
+        "ssh-mcp",
+        "-y",
+        "--",
+        "--host=<REDACTED>",
+        "--user=<REDACTED>",
+        "--key=<REDACTED_PATH>",
+        "--timeout=30000",
+        "--maxChars=none"
+      ],
+      "enabled": true,
+      "type": "local"
+    },
+    "ssh-oracle": {
+      "command": [
+        "npx",
+        "ssh-mcp",
+        "-y",
+        "--",
+        "--host=<REDACTED>",
+        "--user=<REDACTED>",
+        "--password=<REDACTED>",
+        "--timeout=30000",
+        "--maxChars=none"
+      ],
+      "enabled": true,
+      "type": "local"
+    },
+    "ssh-usa": {
+      "command": [
+        "npx",
+        "ssh-mcp",
+        "-y",
+        "--",
+        "--host=<REDACTED>",
+        "--user=<REDACTED>",
+        "--key=<REDACTED_PATH>",
+        "--timeout=30000",
+        "--maxChars=none"
+      ],
+      "enabled": true,
+      "type": "local"
+    },
+    "stitch": {
+      "enabled": true,
+      "type": "remote",
+      "url": "https://stitch.googleapis.com/mcp"
+    },
+    "supabase": {
+      "enabled": true,
+      "type": "remote",
+      "url": "https://mcp.supabase.com/mcp?project_ref=jigtlcgecidrctqelsxa&features=storage%2Cbranching%2Cfunctions%2Cdevelopment%2Cdebugging%2Cdatabase%2Caccount%2Cdocs"
+    },
+    "reactbits": {
+      "command": [
+        "npx",
+        "-y",
+        "<REDACTED>"
+      ],
+      "enabled": true,
+      "type": "local"
+    },
+    "vercel": {
+      "enabled": true,
+      "type": "remote",
+      "url": "https://mcp.vercel.com"
+    }
+  }
+}

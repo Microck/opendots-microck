@@ -1,0 +1,13 @@
+id: "opendots-microck"
+name: "Microck OpenDots Bundle"
+summary: "OpenCode configuration bundle (agents, skills, themes, commands)."
+license: "MIT"
+
+tags:
+  - opencode
+  - bundle
+  - agents
+  - commands
+  - skills
+  - plugins
+  - themes
