@@ -7,7 +7,7 @@
 <h1 align="center">Microck OpenDots Bundle</h1>
 
 <p align="center">
-  <a href="https://opendots.me/bundle/{bundle-id}">View on OpenDots</a> •
+  <a href="https://opendots.me/bundle/956398f7-dae8-4e10-bf8a-b3a0b1011a11">View on OpenDots</a> •
   <a href="#install">Install</a> •
   <a href="#contents">Contents</a>
 </p>
@@ -20,7 +20,7 @@
 Install instructions:
 
 1) Open: https://opendots.me/INSTALL.md
-2) Follow it step-by-step for bundle URL: https://opendots.me/bundle/{bundle-id}
+2) Follow it step-by-step for bundle URL: https://opendots.me/bundle/956398f7-dae8-4e10-bf8a-b3a0b1011a11
 
 If your runtime can run shell commands:
 
