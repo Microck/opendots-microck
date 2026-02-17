@@ -1,0 +1,26 @@
+# Quick Links
+
+- Docs: https://ui.shadcn.com/docs
+- Components index (Radix examples): https://ui.shadcn.com/docs/components
+- Base UI components list: use this skill’s `references/components.md`
+- Base UI vs Radix conversion rule: `references/overview.md`
+- Installation: https://ui.shadcn.com/docs/installation
+- CLI: https://ui.shadcn.com/docs/cli
+- components.json: https://ui.shadcn.com/docs/components-json
+- Theming: https://ui.shadcn.com/docs/theming
+- Dark mode: https://ui.shadcn.com/docs/dark-mode
+- Forms: https://ui.shadcn.com/docs/forms
+- Registry: https://ui.shadcn.com/docs/registry
+- MCP: https://ui.shadcn.com/docs/mcp
+- Changelog: https://ui.shadcn.com/docs/changelog
+- Monorepo: https://ui.shadcn.com/docs/monorepo
+- React 19: https://ui.shadcn.com/docs/react-19
+- Tailwind v4: https://ui.shadcn.com/docs/tailwind-v4
+- JavaScript: https://ui.shadcn.com/docs/javascript
+- Figma: https://ui.shadcn.com/docs/figma
+- v0: https://ui.shadcn.com/docs/v0
+- llms.txt: https://ui.shadcn.com/llms.txt
+- Base UI skill: skills/base-ui
+- Base UI project docs: https://base-ui.com
+- Base UI issues: https://github.com/mui/base-ui/issues
+- shadcn/ui issues: https://github.com/shadcn-ui/ui/issues
