@@ -347,72 +347,73 @@ sed -n '1,160p' /tmp/opendots-INSTALL.md
   - `writing-clearly-and-concisely`
 - **Plugins**
   - `agents marketplace (registry)` - Plugin registry listing 71 plugins (not installed by default). Sample: code-documentation, debugging-toolkit, git-pr-workflows.
-  - `conductor` - { "name": "conductor", "version": "1.2.0", "description": "Context-Driven Development plugin that transforms Claude Code into a project management tool with structured workflow: Context → Spec & Plan → Implement", "autho
-  - `llm-application-dev` - { "name": "llm-application-dev", "description": "LLM application development with LangGraph, RAG systems, vector search, and AI agent architectures for Claude 4.5 and GPT-5.2", "author": { "name": "Seth Hobson", "email":
-  - `multicodex` - /** * # multicodex plugin * * This plugin rotates OpenAI Codex OAuth accounts after rate-limit retry events. * * ## Setup * * 1. Add this plugin to your OpenCode config (opencode.json): * "plugins": ["file:///absolute/pa
-  - `opencode-autotitle` - import fs from "node:fs"; import path from "node:path"; // Log immediately when module is loaded (helps debug if plugin is being loaded at all) console.error("[autotitle] Module loaded"); // Emoji prefixes for titles con
-  - `startup-business-analyst` - { "name": "startup-business-analyst", "description": "Comprehensive startup business analysis with market sizing (TAM/SAM/SOM), financial modeling, team planning, and strategic research", "author": { "name": "Seth Hobson
-  - `ui-design` - { "name": "ui-design", "description": "Comprehensive UI/UX design plugin for mobile (iOS, Android, React Native) and web applications with design systems, accessibility, and modern patterns", "author": { "name": "Seth Ho
+  - `conductor` - Context-Driven Development plugin that transforms Claude Code into a project management tool with structured workflow: Context → Spec & Plan → Implement
+  - `llm-application-dev` - LLM application development with LangGraph, RAG systems, vector search, and AI agent architectures for Claude 4.5 and GPT-5.2
+  - `multicodex` - Rotate OpenAI Codex OAuth accounts on 429/rate-limit retries: maintain multicodex-accounts.json, advance activeIndex, syncs OpenCode auth.json, and update in-memory auth so subsequent openai/* calls use the next account.
+  - `opencode-autotitle` - Auto-title OpenCode sessions: set keyword title on the first user message then replace it with a concise AI title using a cheap model/provider; respects custom user titles; configurable via OPENCODE_AUTOTITLE_* env vars.
+  - `opencode-autotitle.impl` - import fs from "node:fs"; import path from "node:path"; // Log immediately when module is loaded (helps debug if plugin is being loaded at all) console.error("[autotitle] Module loaded"); // Emoji prefixes for titles con
+  - `startup-business-analyst` - Comprehensive startup business analysis with market sizing (TAM/SAM/SOM), financial modeling, team planning, and strategic research
+  - `ui-design` - Comprehensive UI/UX design plugin for mobile (iOS, Android, React Native) and web applications with design systems, accessibility, and modern patterns
 - **Commands**
-  - `baseline-ui`
-  - `checklist`
-  - `cleanup`
-  - `generate-image`
-  - `gsap`
-  - `gsd-add-phase`
-  - `gsd-add-todo`
-  - `gsd-audit-milestone`
-  - `gsd-check-todos`
-  - `gsd-complete-milestone`
-  - `gsd-debug`
-  - `gsd-discuss-phase`
-  - `gsd-execute-phase`
-  - `gsd-help`
-  - `gsd-insert-phase`
-  - `gsd-join-discord`
-  - `gsd-list-phase-assumptions`
-  - `gsd-map-codebase`
-  - `gsd-new-milestone`
-  - `gsd-new-project`
-  - `gsd-pause-work`
-  - `gsd-plan-milestone-gaps`
-  - `gsd-plan-phase`
-  - `gsd-progress`
-  - `gsd-quick`
-  - `gsd-remove-phase`
-  - `gsd-research-phase`
-  - `gsd-resume-work`
-  - `gsd-set-profile`
-  - `gsd-settings`
-  - `gsd-update`
-  - `gsd-verify-work`
-  - `microck-readme`
-  - `microck-research`
-  - `microck-writing`
-  - `naming`
-  - `opentui`
-  - `rams`
-  - `seo`
-  - `ui-skills`
-  - `web-interface-guidelines`
-  - `working-paper`
+  - `baseline-ui` - Enforces an opinionated UI baseline to prevent AI-generated interface slop.
+  - `checklist` - Create or update website-checklist.md as an actionable website launch checklist.
+  - `cleanup` - Perform a comprehensive project cleanup, optimization, and standardization pass.
+  - `generate-image` - Generate images using Gemini 3 Pro Image model
+  - `gsap` - Analyze website and generate comprehensive GSAP animations. Use when you want to enhance a site with scroll effects, text animations, SVG effects, layout transitions, drag interactions, or any GSAP-based motion.
+  - `gsd-add-phase` - Add phase to end of current milestone in roadmap
+  - `gsd-add-todo` - Capture idea or task as todo from current conversation context
+  - `gsd-audit-milestone` - Audit milestone completion against original intent before archiving
+  - `gsd-check-todos` - List pending todos and select one to work on
+  - `gsd-complete-milestone` - Archive completed milestone and prepare for next version
+  - `gsd-debug` - Systematic debugging with persistent state across context resets
+  - `gsd-discuss-phase` - Gather phase context through adaptive questioning before planning
+  - `gsd-execute-phase` - Execute all plans in a phase with wave-based parallelization
+  - `gsd-help` - Show available GSD commands and usage guide
+  - `gsd-insert-phase` - Insert urgent work as decimal phase (e.g., 72.1) between existing phases
+  - `gsd-join-discord` - Join the GSD Discord community
+  - `gsd-list-phase-assumptions` - Surface Claude's assumptions about a phase approach before planning
+  - `gsd-map-codebase` - Analyze codebase with parallel mapper agents to produce .planning/codebase/ documents
+  - `gsd-new-milestone` - Start a new milestone cycle — update PROJECT.md and route to requirements
+  - `gsd-new-project` - Initialize a new project with deep context gathering and PROJECT.md
+  - `gsd-pause-work` - Create context handoff when pausing work mid-phase
+  - `gsd-plan-milestone-gaps` - Create phases to close all gaps identified by milestone audit
+  - `gsd-plan-phase` - Create detailed execution plan for a phase (PLAN.md) with verification loop
+  - `gsd-progress` - Check project progress, show context, and route to next action (execute or plan)
+  - `gsd-quick` - Execute a quick task with GSD guarantees (atomic commits, state tracking) but skip optional agents
+  - `gsd-remove-phase` - Remove a future phase from roadmap and renumber subsequent phases
+  - `gsd-research-phase` - Research how to implement a phase (standalone - usually use /gsd-plan-phase instead)
+  - `gsd-resume-work` - Resume work from previous session with full context restoration
+  - `gsd-set-profile` - Switch model profile for GSD agents (quality/balanced/budget)
+  - `gsd-settings` - Configure GSD workflow toggles and model profile
+  - `gsd-update` - Update GSD to latest version with changelog display
+  - `gsd-verify-work` - Validate built features through conversational UAT
+  - `microck-readme` - Format README.md or technical documentation in the Microck visual layout.
+  - `microck-research` - Launches the Microck Deep Researcher for exhaustive, autonomous research on a topic.
+  - `microck-writing` - Transform any text content into the blunt, lowercase Microck engineering style.
+  - `naming` - Generate strong names for developer tools using structured naming patterns.
+  - `opentui` - Load OpenTUI skill and get contextual guidance for building terminal user interfaces
+  - `rams` - Run accessibility and visual design review
+  - `seo` - Use when optimizing content for search engines, including keyword research, internal linking, and meta tags.
+  - `ui-skills` - Ui Skills definition.
+  - `web-interface-guidelines` - Review UI code for Vercel Web Interface Guidelines compliance
+  - `working-paper` - Activates the working-paper skill for mathematical research and LaTeX drafting.
 - **Agents**
-  - `gsd-codebase-mapper`
-  - `gsd-debugger`
-  - `gsd-executor`
-  - `gsd-integration-checker`
-  - `gsd-phase-researcher`
-  - `gsd-plan-checker`
-  - `gsd-planner`
-  - `gsd-project-researcher`
-  - `gsd-research-synthesizer`
-  - `gsd-roadmapper`
-  - `gsd-verifier`
-  - `microck-researcher`
-  - `web-search`
-  - `web-search-modules`
+  - `gsd-codebase-mapper` - Explores codebase and writes structured analysis documents. Spawned by map-codebase with a focus area (tech, arch, quality, concerns). Writes documents directly to reduce orchestrator context load.
+  - `gsd-debugger` - Investigates bugs using scientific method, manages debug sessions, handles checkpoints. Spawned by /gsd-debug orchestrator.
+  - `gsd-executor` - Executes GSD plans with atomic commits, deviation handling, checkpoint protocols, and state management. Spawned by execute-phase orchestrator or execute-plan command.
+  - `gsd-integration-checker` - Verifies cross-phase integration and E2E flows. Checks that phases connect properly and user workflows complete end-to-end.
+  - `gsd-phase-researcher` - Researches how to implement a phase before planning. Produces RESEARCH.md consumed by gsd-planner. Spawned by /gsd-plan-phase orchestrator.
+  - `gsd-plan-checker` - Verifies plans will achieve phase goal before execution. Goal-backward analysis of plan quality. Spawned by /gsd-plan-phase orchestrator.
+  - `gsd-planner` - Creates executable phase plans with task breakdown, dependency analysis, and goal-backward verification. Spawned by /gsd-plan-phase orchestrator.
+  - `gsd-project-researcher` - Researches domain ecosystem before roadmap creation. Produces files in .planning/research/ consumed during roadmap creation. Spawned by /gsd-new-project or /gsd-new-milestone orchestrators.
+  - `gsd-research-synthesizer` - Synthesizes research outputs from parallel researcher agents into SUMMARY.md. Spawned by /gsd-new-project after 4 researcher agents complete.
+  - `gsd-roadmapper` - Creates project roadmaps with phase breakdown, requirement mapping, success criteria derivation, and coverage validation. Spawned by /gsd-new-project orchestrator.
+  - `gsd-verifier` - Verifies phase goal achievement through goal-backward analysis. Checks codebase delivers what phase promised, not just that tasks completed. Creates VERIFICATION.md report.
+  - `microck-researcher` - An autonomous deep-research agent that recursively explores topics, manages its own planning files, and runs for extended periods to gather exhaustive information.
+  - `web-search` - Use this agent when you need to research information on the internet, particularly for debugging issues, finding solutions to technical problems, or gathering comprehensive information from multiple sources. This agent e
+  - `web-search-modules` - Modular web-search playbooks used by the web-search agent (sources, query strategy, and verification patterns).
 - **Themes**
-  - `og-steam`
+  - `og-steam` - Steam-inspired green-and-maize theme for OpenCode with strong contrast and friendly diff colors.
 - **MCP Servers**
   - `agent-browser-mcp` - Automate a real browser for web testing: navigate, snapshot the DOM/accessibility tree, click/fill/type, scroll, take screenshots/PDFs, and manage cookies/sessions.
   - `aws-ec2-windows` - Manage a Windows EC2 instance: check status/IP, start/stop (including emergency stop), fetch the Administrator password and RDP details, and inspect protection logs.
@@ -423,22 +424,22 @@ sed -n '1,160p' /tmp/opendots-INSTALL.md
   - `grep-app` - Search local files quickly: intent-based search, regex search, count matches, and list files containing matches.
   - `gsap` - Design GSAP animations and patterns: generate timelines/ScrollTrigger setups, debug animation bugs, optimize for performance, and produce production-ready sequences.
   - `kagi-search` - Run Kagi web searches: query with operators, return structured results (title/link/snippet), and gather multiple sources for verification. Source: https://github.com/web-agent-master/kagi-search
-  - `mintlify` - Fetch documentation content from Mintlify via a remote integration (disabled by default). Source: https://mintlify.com/docs/mcp
-  - `motion` - Generate CSS easing helpers: create spring-like and bounce-like linear() transitions tuned by duration/bounce for UI animation. Source: https://api.motion.dev/registry.tgz?package=motion-studio-mcp&version=latest
+  - `mintlify` - Fetch documentation content from Mintlify via a remote integration (disabled by default). Source: https://mintlify.com/docs/mcp ([endpoint](https://mintlify.com/docs/mcp))
+  - `motion` - Generate CSS easing helpers: create spring-like and bounce-like linear() transitions tuned by duration/bounce for UI animation. Source: https://api.motion.dev/registry.tgz?package=motion-studio-mcp&version=latest ([source](https://www.npmjs.com/package/https://api.motion.dev/registry.tgz?package=motion-studio-mcp&version=latest))
   - `n8n-mcp` - Work with n8n programmatically: search nodes/templates, validate node/workflow configs, create/update workflows, and inspect executions.
   - `next-devtools` - Inspect and debug a running Next.js dev server: discover available routes/tools, fetch compile/runtime errors, and run browser-based checks when needed.
-  - `perplexity-webui` - Do web research with sources: run quick lookups or deep research and return cited answers from the internet.
+  - `perplexity-webui` - Do web research with sources: run quick lookups or deep research and return cited answers from the internet. ([endpoint](http://<REDACTED_IP>:8790/sse))
   - `qmd` - Index and search a Markdown knowledge base: keyword search, semantic vector search, hybrid query with reranking, and retrieve full documents.
   - `reactbits` - Browse React Bits UI snippets: list/search components, fetch component source code, and get demo usage examples.
   - `registry-directory-mcp` - Discover UI component registries and blocks: search registries/components by keyword and fetch full component details/JSON when available.
-  - `ssh-ec2-tailscale` - Run remote shell commands over SSH to an EC2 host reachable via Tailscale: exec commands, use sudo, and fetch diagnostics for ops workflows. Source: https://github.com/tufantunc/ssh-mcp
-  - `ssh-local-dev` - Run remote shell commands over SSH to a local dev host: exec commands, use sudo, and fetch diagnostics for development workflows. Source: https://github.com/tufantunc/ssh-mcp
-  - `ssh-nas` - Run remote shell commands over SSH on a NAS host: exec commands, use sudo, and fetch diagnostics for ops workflows. Source: https://github.com/tufantunc/ssh-mcp
-  - `ssh-oracle` - Run remote shell commands over SSH on an Oracle host: exec commands, use sudo, and fetch diagnostics for ops workflows. Source: https://github.com/tufantunc/ssh-mcp
-  - `ssh-usa` - Run remote shell commands over SSH on a USA host: exec commands, use sudo, and fetch diagnostics for ops workflows. Source: https://github.com/tufantunc/ssh-mcp
-  - `stitch` - Generate and edit UI screens: create screens from text prompts, edit existing screens, and generate design variants (layout/color/typography/content).
-  - `supabase` - Work with Supabase/Postgres: manage projects and run database-related operations.
-  - `vercel` - Manage Vercel projects and deployments: list teams/projects/deployments, fetch build/runtime logs, create share links for protected previews, and deploy from this repo.
+  - `ssh-ec2-tailscale` - Run remote shell commands over SSH to an EC2 host reachable via Tailscale: exec commands, use sudo, and fetch diagnostics for ops workflows. Source: https://github.com/tufantunc/ssh-mcp ([source](https://github.com/tufantunc/ssh-mcp))
+  - `ssh-local-dev` - Run remote shell commands over SSH to a local dev host: exec commands, use sudo, and fetch diagnostics for development workflows. Source: https://github.com/tufantunc/ssh-mcp ([source](https://github.com/tufantunc/ssh-mcp))
+  - `ssh-nas` - Run remote shell commands over SSH on a NAS host: exec commands, use sudo, and fetch diagnostics for ops workflows. Source: https://github.com/tufantunc/ssh-mcp ([source](https://github.com/tufantunc/ssh-mcp))
+  - `ssh-oracle` - Run remote shell commands over SSH on an Oracle host: exec commands, use sudo, and fetch diagnostics for ops workflows. Source: https://github.com/tufantunc/ssh-mcp ([source](https://github.com/tufantunc/ssh-mcp))
+  - `ssh-usa` - Run remote shell commands over SSH on a USA host: exec commands, use sudo, and fetch diagnostics for ops workflows. Source: https://github.com/tufantunc/ssh-mcp ([source](https://github.com/tufantunc/ssh-mcp))
+  - `stitch` - Generate and edit UI screens: create screens from text prompts, edit existing screens, and generate design variants (layout/color/typography/content). ([endpoint](https://stitch.googleapis.com/mcp))
+  - `supabase` - Work with Supabase/Postgres: manage projects and run database-related operations. ([endpoint](https://mcp.supabase.com/mcp?project_ref=jigtlcgecidrctqelsxa&features=storage%2Cbranching%2Cfunctions%2Cdevelopment%2Cdebugging%2Cdatabase%2Caccount%2Cdocs))
+  - `vercel` - Manage Vercel projects and deployments: list teams/projects/deployments, fetch build/runtime logs, create share links for protected previews, and deploy from this repo. ([endpoint](https://mcp.vercel.com))
 <!-- OPENDOTS_AUTO_CONTENTS_END -->
 
 ## Safety
