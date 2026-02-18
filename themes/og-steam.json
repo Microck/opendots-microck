@@ -1,5 +1,6 @@
 {
   "$schema": "https://opencode.ai/theme.json",
+  "description": "Steam-inspired green-and-maize theme with strong contrast and friendly diff/status colors.",
   "defs": {
     "darkGreenBG": "#3e4637",
     "greenBG": "#4c5844",
