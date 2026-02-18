@@ -346,77 +346,13 @@ sed -n '1,160p' /tmp/opendots-INSTALL.md
   - `workflow-patterns`
   - `writing-clearly-and-concisely`
 - **Plugins**
-  - `accessibility-compliance` - WCAG accessibility auditing, compliance validation, UI testing for screen readers, keyboard navigation, and inclusive design
-  - `agent-orchestration` - Multi-agent system optimization, agent improvement workflows, and context management
-  - `api-scaffolding` - REST and GraphQL API scaffolding, framework selection, backend architecture, and API generation
-  - `api-testing-observability` - API testing automation, request mocking, OpenAPI documentation generation, observability setup, and monitoring
-  - `application-performance` - Application profiling, performance optimization, and observability for frontend and backend systems
-  - `arm-cortex-microcontrollers` - ARM Cortex-M firmware development for Teensy, STM32, nRF52, and SAMD with peripheral drivers and memory safety patterns
-  - `backend-api-security` - API security hardening, authentication implementation, authorization patterns, rate limiting, and input validation
-  - `backend-development` - Backend API design, GraphQL architecture, workflow orchestration with Temporal, and test-driven backend development
-  - `blockchain-web3` - Smart contract development with Solidity, DeFi protocol implementation, NFT platforms, and Web3 application architecture
-  - `business-analytics` - Business metrics analysis, KPI tracking, financial reporting, and data-driven decision making
-  - `c4-architecture` - Comprehensive C4 architecture documentation workflow with bottom-up code analysis, component synthesis, container mapping, and context diagram generation
-  - `cicd-automation` - CI/CD pipeline configuration, GitHub Actions/GitLab CI workflow setup, and automated deployment pipeline orchestration
-  - `cloud-infrastructure` - Cloud architecture design for AWS/Azure/GCP, Kubernetes cluster configuration, Terraform infrastructure-as-code, hybrid cloud networking, and multi-cloud cost optimization
-  - `code-documentation` - Documentation generation, code explanation, and technical writing with automated doc generation and tutorial creation
-  - `code-refactoring` - Code cleanup, refactoring automation, and technical debt management with context restoration
-  - `code-review-ai` - AI-powered architectural review and code quality analysis
-  - `codebase-cleanup` - Technical debt reduction, dependency updates, and code refactoring automation
-  - `comprehensive-review` - Multi-perspective code analysis covering architecture, security, and best practices
-  - `conductor` - Context-Driven Development plugin that transforms Claude Code into a project management tool with structured workflow: Context → Spec & Plan → Implement
-  - `content-marketing` - Content marketing strategy, web research, and information synthesis for marketing operations
-  - `context-management` - Context persistence, restoration, and long-running conversation management
-  - `customer-sales-automation` - Customer support workflow automation, sales pipeline management, email campaigns, and CRM integration
-  - `data-engineering` - ETL pipeline construction, data warehouse design, batch processing workflows, and data-driven feature development
-  - `data-validation-suite` - Schema validation, data quality monitoring, streaming validation pipelines, and input validation for backend APIs
-  - `database-cloud-optimization` - Database query optimization, cloud cost optimization, and scalability improvements
-  - `database-design` - Database architecture, schema design, and SQL optimization for production systems
-  - `database-migrations` - Database migration automation, observability, and cross-database migration strategies
-  - `debugging-toolkit` - Interactive debugging, developer experience optimization, and smart debugging workflows
-  - `dependency-management` - Dependency auditing, version management, and security vulnerability scanning
-  - `deployment-strategies` - Deployment patterns, rollback automation, and infrastructure templates
-  - `deployment-validation` - Pre-deployment checks, configuration validation, and deployment readiness assessment
-  - `developer-essentials` - Essential developer skills including Git workflows, SQL optimization, error handling, code review, E2E testing, authentication, debugging, and monorepo management
-  - `distributed-debugging` - Distributed system tracing and debugging across microservices
-  - `documentation-generation` - OpenAPI specification generation, Mermaid diagram creation, tutorial writing, API reference documentation
-  - `error-debugging` - Error analysis, trace debugging, and multi-agent problem diagnosis
-  - `error-diagnostics` - Error tracing, root cause analysis, and smart debugging for production systems
-  - `framework-migration` - Framework updates, migration planning, and architectural transformation workflows
-  - `frontend-mobile-development` - Frontend UI development and mobile application implementation across platforms
-  - `frontend-mobile-security` - XSS prevention, CSRF protection, content security policies, mobile app security, and secure storage patterns
-  - `full-stack-orchestration` - End-to-end feature orchestration with testing, security, performance, and deployment
-  - `functional-programming` - Functional programming with Elixir, OTP patterns, Phoenix framework, and distributed systems
-  - `game-development` - Unity game development with C# scripting, Minecraft server plugin development with Bukkit/Spigot APIs
-  - `git-pr-workflows` - Git workflow automation, pull request enhancement, and team onboarding processes
-  - `hr-legal-compliance` - HR policy documentation, legal compliance templates (GDPR/SOC2/HIPAA), employment contracts, and regulatory documentation
-  - `incident-response` - Production incident management, triage workflows, and automated incident resolution
-  - `javascript-typescript` - JavaScript and TypeScript development with ES6+, Node.js, React, and modern web frameworks
-  - `julia-development` - Modern Julia development with Julia 1.10+, package management, scientific computing, high-performance numerical code, and production best practices
-  - `jvm-languages` - JVM language development including Java, Scala, and C# with enterprise patterns and frameworks
-  - `kubernetes-operations` - Kubernetes manifest generation, networking configuration, security policies, observability setup, GitOps workflows, and auto-scaling
-  - `llm-application-dev` - LLM application development with LangGraph, RAG systems, vector search, and AI agent architectures for Claude 4.5 and GPT-5.2
-  - `machine-learning-ops` - ML model training pipelines, hyperparameter tuning, model deployment automation, experiment tracking, and MLOps workflows
-  - `multi-platform-apps` - Cross-platform application development coordinating web, iOS, Android, and desktop implementations
-  - `observability-monitoring` - Metrics collection, logging infrastructure, distributed tracing, SLO implementation, and monitoring dashboards
-  - `payment-processing` - Payment gateway integration with Stripe, PayPal, checkout flow implementation, subscription billing, and PCI compliance
-  - `performance-testing-review` - Performance analysis, test coverage review, and AI-powered code quality assessment
-  - `python-development` - Modern Python development with Python 3.12+, Django, FastAPI, async patterns, and production best practices
-  - `quantitative-trading` - Quantitative analysis, algorithmic trading strategies, financial modeling, portfolio risk management, and backtesting
-  - `reverse-engineering` - Binary reverse engineering, malware analysis, firmware security, and software protection research for authorized security research, CTF competitions, and defensive security
-  - `security-compliance` - SOC2, HIPAA, and GDPR compliance validation, secrets scanning, compliance checklists, and regulatory documentation
-  - `security-scanning` - SAST analysis, dependency vulnerability scanning, OWASP Top 10 compliance, container security scanning, and automated security hardening
-  - `seo-analysis-monitoring` - Content freshness analysis, cannibalization detection, and authority building for SEO
-  - `seo-content-creation` - SEO content writing, planning, and quality auditing with E-E-A-T optimization
-  - `seo-technical-optimization` - Technical SEO optimization including meta tags, keywords, structure, and featured snippets
-  - `shell-scripting` - Production-grade Bash scripting with defensive programming, POSIX compliance, and comprehensive testing
-  - `startup-business-analyst` - Comprehensive startup business analysis with market sizing (TAM/SAM/SOM), financial modeling, team planning, and strategic research for early-stage companies
-  - `systems-programming` - Systems programming with Rust, Go, C, and C++ for performance-critical and low-level development
-  - `tdd-workflows` - Test-driven development methodology with red-green-refactor cycles and code review
-  - `team-collaboration` - Team workflows, issue management, standup automation, and developer experience optimization
-  - `ui-design` - Comprehensive UI/UX design plugin for mobile (iOS, Android, React Native) and web applications with design systems, accessibility, and modern patterns
-  - `unit-testing` - Unit and integration test automation for Python and JavaScript with debugging support
-  - `web-scripting` - Web scripting with PHP and Ruby for web applications, CMS development, and backend services
+  - `agents marketplace (registry)` - Plugin registry listing 71 plugins (not installed by default). Sample: code-documentation, debugging-toolkit, git-pr-workflows.
+  - `conductor` - { "name": "conductor", "version": "1.2.0", "description": "Context-Driven Development plugin that transforms Claude Code into a project management tool with structured workflow: Context → Spec & Plan → Implement", "autho
+  - `llm-application-dev` - { "name": "llm-application-dev", "description": "LLM application development with LangGraph, RAG systems, vector search, and AI agent architectures for Claude 4.5 and GPT-5.2", "author": { "name": "Seth Hobson", "email":
+  - `multicodex` - /** * # multicodex plugin * * This plugin rotates OpenAI Codex OAuth accounts after rate-limit retry events. * * ## Setup * * 1. Add this plugin to your OpenCode config (opencode.json): * "plugins": ["file:///absolute/pa
+  - `opencode-autotitle` - import fs from "node:fs"; import path from "node:path"; // Log immediately when module is loaded (helps debug if plugin is being loaded at all) console.error("[autotitle] Module loaded"); // Emoji prefixes for titles con
+  - `startup-business-analyst` - { "name": "startup-business-analyst", "description": "Comprehensive startup business analysis with market sizing (TAM/SAM/SOM), financial modeling, team planning, and strategic research", "author": { "name": "Seth Hobson
+  - `ui-design` - { "name": "ui-design", "description": "Comprehensive UI/UX design plugin for mobile (iOS, Android, React Native) and web applications with design systems, accessibility, and modern patterns", "author": { "name": "Seth Ho
 - **Commands**
   - `baseline-ui`
   - `checklist`
@@ -478,31 +414,31 @@ sed -n '1,160p' /tmp/opendots-INSTALL.md
 - **Themes**
   - `og-steam`
 - **MCP Servers**
-  - `agent-browser-mcp` - Browser automation MCP for interactive browsing, screenshots, and page actions.
-  - `aws-ec2-windows` - Local MCP wrapper script `awsec2/server.sh`.
-  - `better-auth` - Local MCP server `better-auth` launched via `npx`.
-  - `context7` - Library and framework docs MCP for up-to-date API references and examples.
-  - `discord-py-self` - Python MCP server.
-  - `font-mcp` - MCP server executable `node`.
-  - `grep-app` - Local MCP server `grep-app` launched via `npx`.
-  - `gsap` - Local MCP server `gsap` launched via `npx`.
-  - `kagi-search` - Private web search MCP for high-quality, ad-free search results.
-  - `mintlify` - MCP server is configured but disabled by default.
-  - `motion` - MCP server from `https://api.motion.dev/registry.tgz?package=motion-studio-mcp&version=latest` package.
-  - `n8n-mcp` - Local MCP server `n8n-mcp` launched via `npx`.
-  - `next-devtools` - Local MCP server `next-devtools` launched via `npx`.
-  - `perplexity-webui` - Perplexity research MCP for live web answers and deep research.
-  - `qmd` - Local markdown knowledge search MCP for indexed notes and docs.
-  - `reactbits` - Local MCP server `reactbits` launched via `npx`.
-  - `registry-directory-mcp` - MCP server executable `node`.
-  - `ssh-ec2-tailscale` - MCP server from `ssh-mcp` package.
-  - `ssh-local-dev` - MCP server from `ssh-mcp` package.
-  - `ssh-nas` - MCP server from `ssh-mcp` package.
-  - `ssh-oracle` - MCP server from `ssh-mcp` package.
-  - `ssh-usa` - MCP server from `ssh-mcp` package.
-  - `stitch` - Stitch UI generation MCP for project/screen creation and editing.
-  - `supabase` - Supabase MCP endpoint hosted on `mcp.supabase.com`.
-  - `vercel` - Vercel MCP for deployments, logs, and project/runtime diagnostics.
+  - `agent-browser-mcp` - Automate a real browser for web testing: navigate, snapshot the DOM/accessibility tree, click/fill/type, scroll, take screenshots/PDFs, and manage cookies/sessions.
+  - `aws-ec2-windows` - Manage a Windows EC2 instance: check status/IP, start/stop (including emergency stop), fetch the Administrator password and RDP details, and inspect protection logs.
+  - `better-auth` - Generate Better Auth setup for your app: create server/client config files, list required env vars, and enable features like social login, 2FA, passkeys, and database adapters.
+  - `context7` - Fetch up-to-date library/framework documentation: resolve library IDs, query API references, and pull authoritative code examples for correct usage.
+  - `discord-py-self` - Control a Discord user account: read/send messages, manage channels/threads/roles, react to messages, and interact with buttons/menus and slash commands.
+  - `font-mcp` - Pick and configure fonts: recommend pairings by vibe, analyze a website to identify fonts, and generate Tailwind/CSS setup code.
+  - `grep-app` - Search local files quickly: intent-based search, regex search, count matches, and list files containing matches.
+  - `gsap` - Design GSAP animations and patterns: generate timelines/ScrollTrigger setups, debug animation bugs, optimize for performance, and produce production-ready sequences.
+  - `kagi-search` - Run Kagi web searches: query with operators, return structured results (title/link/snippet), and gather multiple sources for verification.
+  - `mintlify` - Fetch documentation content from Mintlify via a remote integration (disabled by default).
+  - `motion` - Generate CSS easing helpers: create spring-like and bounce-like linear() transitions tuned by duration/bounce for UI animation.
+  - `n8n-mcp` - Work with n8n programmatically: search nodes/templates, validate node/workflow configs, create/update workflows, and inspect executions.
+  - `next-devtools` - Inspect and debug a running Next.js dev server: discover available routes/tools, fetch compile/runtime errors, and run browser-based checks when needed.
+  - `perplexity-webui` - Do web research with sources: run quick lookups or deep research and return cited answers from the internet.
+  - `qmd` - Index and search a Markdown knowledge base: keyword search, semantic vector search, hybrid query with reranking, and retrieve full documents.
+  - `reactbits` - Browse React Bits UI snippets: list/search components, fetch component source code, and get demo usage examples.
+  - `registry-directory-mcp` - Discover UI component registries and blocks: search registries/components by keyword and fetch full component details/JSON when available.
+  - `ssh-ec2-tailscale` - Run remote shell commands over SSH to an EC2 host reachable via Tailscale: exec commands, use sudo, and fetch diagnostics for ops workflows.
+  - `ssh-local-dev` - Run remote shell commands over SSH to a local dev host: exec commands, use sudo, and fetch diagnostics for development workflows.
+  - `ssh-nas` - Run remote shell commands over SSH on a NAS host: exec commands, use sudo, and fetch diagnostics for ops workflows.
+  - `ssh-oracle` - Run remote shell commands over SSH on an Oracle host: exec commands, use sudo, and fetch diagnostics for ops workflows.
+  - `ssh-usa` - Run remote shell commands over SSH on a USA host: exec commands, use sudo, and fetch diagnostics for ops workflows.
+  - `stitch` - Generate and edit UI screens: create screens from text prompts, edit existing screens, and generate design variants (layout/color/typography/content).
+  - `supabase` - Work with Supabase/Postgres: manage projects and run database-related operations.
+  - `vercel` - Manage Vercel projects and deployments: list teams/projects/deployments, fetch build/runtime logs, create share links for protected previews, and deploy from this repo.
 <!-- OPENDOTS_AUTO_CONTENTS_END -->
 
 ## Safety
