@@ -422,20 +422,20 @@ sed -n '1,160p' /tmp/opendots-INSTALL.md
   - `font-mcp` - Pick and configure fonts: recommend pairings by vibe, analyze a website to identify fonts, and generate Tailwind/CSS setup code.
   - `grep-app` - Search local files quickly: intent-based search, regex search, count matches, and list files containing matches.
   - `gsap` - Design GSAP animations and patterns: generate timelines/ScrollTrigger setups, debug animation bugs, optimize for performance, and produce production-ready sequences.
-  - `kagi-search` - Run Kagi web searches: query with operators, return structured results (title/link/snippet), and gather multiple sources for verification.
-  - `mintlify` - Fetch documentation content from Mintlify via a remote integration (disabled by default).
-  - `motion` - Generate CSS easing helpers: create spring-like and bounce-like linear() transitions tuned by duration/bounce for UI animation.
+  - `kagi-search` - Run Kagi web searches: query with operators, return structured results (title/link/snippet), and gather multiple sources for verification. Source: https://github.com/web-agent-master/kagi-search
+  - `mintlify` - Fetch documentation content from Mintlify via a remote integration (disabled by default). Source: https://mintlify.com/docs/mcp
+  - `motion` - Generate CSS easing helpers: create spring-like and bounce-like linear() transitions tuned by duration/bounce for UI animation. Source: https://api.motion.dev/registry.tgz?package=motion-studio-mcp&version=latest
   - `n8n-mcp` - Work with n8n programmatically: search nodes/templates, validate node/workflow configs, create/update workflows, and inspect executions.
   - `next-devtools` - Inspect and debug a running Next.js dev server: discover available routes/tools, fetch compile/runtime errors, and run browser-based checks when needed.
   - `perplexity-webui` - Do web research with sources: run quick lookups or deep research and return cited answers from the internet.
   - `qmd` - Index and search a Markdown knowledge base: keyword search, semantic vector search, hybrid query with reranking, and retrieve full documents.
   - `reactbits` - Browse React Bits UI snippets: list/search components, fetch component source code, and get demo usage examples.
   - `registry-directory-mcp` - Discover UI component registries and blocks: search registries/components by keyword and fetch full component details/JSON when available.
-  - `ssh-ec2-tailscale` - Run remote shell commands over SSH to an EC2 host reachable via Tailscale: exec commands, use sudo, and fetch diagnostics for ops workflows.
-  - `ssh-local-dev` - Run remote shell commands over SSH to a local dev host: exec commands, use sudo, and fetch diagnostics for development workflows.
-  - `ssh-nas` - Run remote shell commands over SSH on a NAS host: exec commands, use sudo, and fetch diagnostics for ops workflows.
-  - `ssh-oracle` - Run remote shell commands over SSH on an Oracle host: exec commands, use sudo, and fetch diagnostics for ops workflows.
-  - `ssh-usa` - Run remote shell commands over SSH on a USA host: exec commands, use sudo, and fetch diagnostics for ops workflows.
+  - `ssh-ec2-tailscale` - Run remote shell commands over SSH to an EC2 host reachable via Tailscale: exec commands, use sudo, and fetch diagnostics for ops workflows. Source: https://github.com/tufantunc/ssh-mcp
+  - `ssh-local-dev` - Run remote shell commands over SSH to a local dev host: exec commands, use sudo, and fetch diagnostics for development workflows. Source: https://github.com/tufantunc/ssh-mcp
+  - `ssh-nas` - Run remote shell commands over SSH on a NAS host: exec commands, use sudo, and fetch diagnostics for ops workflows. Source: https://github.com/tufantunc/ssh-mcp
+  - `ssh-oracle` - Run remote shell commands over SSH on an Oracle host: exec commands, use sudo, and fetch diagnostics for ops workflows. Source: https://github.com/tufantunc/ssh-mcp
+  - `ssh-usa` - Run remote shell commands over SSH on a USA host: exec commands, use sudo, and fetch diagnostics for ops workflows. Source: https://github.com/tufantunc/ssh-mcp
   - `stitch` - Generate and edit UI screens: create screens from text prompts, edit existing screens, and generate design variants (layout/color/typography/content).
   - `supabase` - Work with Supabase/Postgres: manage projects and run database-related operations.
   - `vercel` - Manage Vercel projects and deployments: list teams/projects/deployments, fetch build/runtime logs, create share links for protected previews, and deploy from this repo.
