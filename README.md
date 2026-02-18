@@ -37,6 +37,898 @@ sed -n '1,160p' /tmp/opendots-INSTALL.md
 - **Themes** - `themes/` (UI themes)
 - **Public config** - `opencode.public.json` (sanitized MCP definitions)
 
+<!-- OPENDOTS_AUTO_CONTENTS_START -->
+- **Skills**
+  - `skills/ab-test-setup/SKILL.md` - When the user wants to plan, design, or implement an A/B test or experiment. Also use when the user mentions "A/B test," "split test," "experiment," "test this change," "variant copy," "multivariate test," or "hypothesis
+  - `skills/ab-test-setup/references/sample-size-guide.md` - Reference for calculating sample sizes and test duration.
+  - `skills/ab-test-setup/references/test-templates.md` - | Element | Value | |---------|-------| | Test ID | [ID] | | Dates | [Start] - [End] | | Duration | X days | | Result | Winner / Loser / Inconclusive | | Decision | [What we're doing] |
+  - `skills/agent-md-refactor/README.md` - Brief context for when these guidelines apply.
+  - `skills/agent-md-refactor/SKILL.md` - Refactor bloated AGENTS.md, CLAUDE.md, or similar agent instruction files to follow progressive disclosure principles. Splits monolithic files into organized, linked documentation.
+  - `skills/analytics-tracking/SKILL.md` - When the user wants to set up, improve, or audit analytics tracking and measurement. Also use when the user mentions "set up tracking," "GA4," "Google Analytics," "conversion tracking," "event tracking," "UTM parameters,
+  - `skills/analytics-tracking/references/event-library.md` - Comprehensive list of events to track by business type and context.
+  - `skills/analytics-tracking/references/ga4-implementation.md` - Detailed implementation guide for Google Analytics 4.
+  - `skills/analytics-tracking/references/gtm-implementation.md` - Detailed guide for implementing tracking via Google Tag Manager.
+  - `skills/backend-to-frontend-handoff-docs/README.md` - This skill automates the creation of structured API handoff documents that provide frontend developers (or their AI assistants) with complete business and technical context needed to build integrations and UI without req
+  - `skills/backend-to-frontend-handoff-docs/SKILL.md` - Create API handoff documentation for frontend developers. Use when backend work is complete and needs to be documented for frontend integration, or user says 'create handoff', 'document API', 'frontend handoff', or 'API 
+  - `skills/base-ui/README.md` - Reference and workflows for @base-ui/react (unstyled, accessible React components).
+  - `skills/base-ui/SKILL.md` - Base UI reference and workflows for @base-ui/react (unstyled, accessible React components, composition utilities, and form helpers). Use when implementing Base UI components, portals, styling/state hooks, render-prop com
+  - `skills/base-ui/references/accessibility.md` - Accessibility definition.
+  - `skills/base-ui/references/animation.md` - Animation definition.
+  - `skills/base-ui/references/components.md` - Components definition.
+  - `skills/base-ui/references/composition.md` - Composition definition.
+  - `skills/base-ui/references/customization.md` - Customization definition.
+  - `skills/base-ui/references/edge-cases.md` - Edge Cases definition.
+  - `skills/base-ui/references/examples.md` - Examples definition.
+  - `skills/base-ui/references/forms.md` - Forms definition.
+  - `skills/base-ui/references/links.md` - Links definition.
+  - `skills/base-ui/references/overview.md` - Overview definition.
+  - `skills/base-ui/references/styling.md` - Styling definition.
+  - `skills/base-ui/references/typescript.md` - Typescript definition.
+  - `skills/base-ui/references/utils.md` - Utils definition.
+  - `skills/best-practices/SKILL.md` - Skill for integrating Better Auth - the comprehensive TypeScript authentication framework.
+  - `skills/c4-architecture/README.md` - This skill helps you create professional architecture documentation using the C4 (Context, Container, Component, Code) model. It generates Mermaid diagrams that visualize your system's architecture at different abstracti
+  - `skills/c4-architecture/SKILL.md` - Generate architecture documentation using C4 model Mermaid diagrams. Use when asked to create architecture diagrams, document system architecture, visualize software structure, create C4 diagrams, or generate context/con
+  - `skills/c4-architecture/references/advanced-patterns.md` - This guide covers advanced patterns for documenting complex architectures including microservices, event-driven systems, deployments, and API documentation.
+  - `skills/c4-architecture/references/c4-syntax.md` - Complete syntax reference for Mermaid C4 diagrams. Compatible with PlantUML C4 syntax.
+  - `skills/c4-architecture/references/common-mistakes.md` - This guide documents frequent anti-patterns and errors when creating C4 architecture diagrams, with examples of what to do instead.
+  - `skills/catbox-upload-skill/SKILL.md` - Upload files to catbox.moe (permanent) or litterbox.catbox.moe (temporary). Use when you want to upload files for sharing via catbox services. Trigger phrases: "upload to catbox", "upload file", "share file via catbox".
+  - `skills/claude.ai/vercel-deploy-claimable/SKILL.md` - Deploy applications and websites to Vercel. Use this skill when the user requests deployment actions such as "Deploy my app", "Deploy this to production", "Create a preview deployment", "Deploy and give me the link", or 
+  - `skills/code-review-expert/README.md` - A comprehensive code review skill for AI agents. Performs structured reviews with a senior engineer lens, covering architecture, security, performance, and code quality.
+  - `skills/code-review-expert/SKILL.md` - "Expert code review of current git changes with a senior engineer lens. Detects SOLID violations, security risks, and proposes actionable improvements."
+  - `skills/code-review-expert/references/code-quality-checklist.md` - Code Quality Checklist definition.
+  - `skills/code-review-expert/references/removal-plan.md` - | Field | Details | |-------|---------| | **Location** | path/to/file.ts:line | | **Rationale** | Why this should be removed | | **Evidence** | Unused (no references), dead feature flag, deprecated API | | **Impact** | N
+  - `skills/code-review-expert/references/security-checklist.md` - Race conditions are subtle bugs that cause intermittent failures and security vulnerabilities. Pay special attention to:
+  - `skills/code-review-expert/references/solid-checklist.md` - | Smell | Signs | |-------|-------| | **Long method** | Function > 30 lines, multiple levels of nesting | | **Feature envy** | Method uses more data from another class than its own | | **Data clumps** | Same group of par
+  - `skills/codex/README.md` - Enable Claude Code to invoke the Codex CLI (codex exec and session resumes) for automated code analysis, refactoring, and editing workflows.
+  - `skills/codex/SKILL.md` - Use when the user asks to run Codex CLI (codex exec, codex resume) or references OpenAI Codex for code analysis, refactoring, or automated editing. Uses GPT-5.2 by default for state-of-the-art software engineering.
+  - `skills/command-creator/README.md` - The Command Creator skill helps you transform repetitive workflows into reusable slash commands that can be invoked with /command-name in Claude Code conversations. It provides expert guidance on command structure, agent
+  - `skills/command-creator/SKILL.md` - This skill should be used when creating a Claude Code slash command. Use when users ask to "create a command", "make a slash command", "add a command", or want to document a workflow as a reusable command. Essential for 
+  - `skills/command-creator/references/best-practices.md` - Focus on creating commands that agents can execute autonomously without asking clarifying questions.
+  - `skills/command-creator/references/examples.md` - Create git commit and submit stack with Graphite
+  - `skills/command-creator/references/patterns.md` - This document describes the common patterns for slash commands, helping you choose the right structure for your workflow.
+  - `skills/commands/deep-research.md` - Invoke deep research with multi-stage verification pipeline. For comprehensive, verified research with claim audits and cross-referencing. Use for thorough investigation of any topic.
+  - `skills/commands/explain-error.md` - Explain Better Auth error codes and provide solutions with code examples
+  - `skills/commands/providers.md` - Display Better Auth available authentication providers and their configuration
+  - `skills/commit-work/README.md` - This skill helps you create well-crafted git commits by: - Ensuring only intended changes are included - Splitting work into logically scoped commits - Writing clear, descriptive commit messages that explain what changed
+  - `skills/commit-work/SKILL.md` - "Create high-quality git commits: review/stage intended changes, split into logical commits, and write clear commit messages (including Conventional Commits). Use when the user asks to commit, craft a commit message, sta
+  - `skills/commit-work/references/commit-message-template.md` - Notes: - Keep the summary imperative and specific ("Add", "Fix", "Remove", "Refactor"). - Avoid implementation minutiae; focus on behavior and intent. - If breaking: use ! in header and/or add BREAKING CHANGE: footer.
+  - `skills/competitor-alternatives/SKILL.md` - "When the user wants to create competitor comparison or alternative pages for SEO and sales enablement. Also use when the user mentions 'alternative page,' 'vs page,' 'competitor comparison,' 'comparison page,' '[Product
+  - `skills/competitor-alternatives/references/content-architecture.md` - How to structure and maintain competitor data for scalable comparison pages.
+  - `skills/competitor-alternatives/references/templates.md` - Ready-to-use templates for each section of competitor comparison pages.
+  - `skills/composition-patterns/AGENTS.md` - > **Note:** > This document is mainly for agents and LLMs to follow when maintaining, > generating, or refactoring React codebases using composition. Humans > may also find it useful, but guidance here is optimized for a
+  - `skills/composition-patterns/README.md` - A structured repository for React composition patterns that scale. These patterns help avoid boolean prop proliferation by using compound components, lifting state, and composing internals.
+  - `skills/composition-patterns/SKILL.md` - React composition patterns that scale. Use when refactoring components with
+  - `skills/composition-patterns/rules/_sections.md` - This file defines all sections, their ordering, impact levels, and descriptions. The section ID (in parentheses) is the filename prefix used to group rules.
+  - `skills/composition-patterns/rules/_template.md` - title: Rule Title Here impact: MEDIUM impactDescription: brief description of impact tags: composition, components
+  - `skills/composition-patterns/rules/architecture-avoid-boolean-props.md` - title: Avoid Boolean Prop Proliferation impact: CRITICAL impactDescription: prevents unmaintainable component variants tags: composition, props, architecture
+  - `skills/composition-patterns/rules/architecture-compound-components.md` - title: Use Compound Components impact: HIGH impactDescription: enables flexible composition without prop drilling tags: composition, compound-components, architecture
+  - `skills/composition-patterns/rules/patterns-children-over-render-props.md` - title: Prefer Composing Children Over Render Props impact: MEDIUM impactDescription: cleaner composition, better readability tags: composition, children, render-props
+  - `skills/composition-patterns/rules/patterns-explicit-variants.md` - title: Create Explicit Component Variants impact: MEDIUM impactDescription: self-documenting code, no hidden conditionals tags: composition, variants, architecture
+  - `skills/composition-patterns/rules/react19-no-forwardref.md` - title: React 19 API Changes impact: MEDIUM impactDescription: cleaner component definitions and context usage tags: react19, refs, context, hooks
+  - `skills/composition-patterns/rules/state-context-interface.md` - title: Define Generic Context Interfaces for Dependency Injection impact: HIGH impactDescription: enables dependency-injectable state across use-cases tags: composition, context, state, typescript, dependency-injection
+  - `skills/composition-patterns/rules/state-decouple-implementation.md` - title: Decouple State Management from UI impact: MEDIUM impactDescription: enables swapping state implementations without changing UI tags: composition, state, architecture
+  - `skills/composition-patterns/rules/state-lift-state.md` - title: Lift State into Provider Components impact: HIGH impactDescription: enables state sharing outside component boundaries tags: composition, state, context, providers
+  - `skills/content-strategy/SKILL.md` - When the user wants to plan a content strategy, decide what content to create, or figure out what topics to cover. Also use when the user mentions "content strategy," "what should I write about," "content ideas," "blog s
+  - `skills/copy-editing/SKILL.md` - "When the user wants to edit, review, or improve existing marketing copy. Also use when the user mentions 'edit this copy,' 'review my copy,' 'copy feedback,' 'proofread,' 'polish this,' 'make this better,' or 'copy swee
+  - `skills/copy-editing/references/plain-english-alternatives.md` - Replace complex or pompous words with plain English alternatives.
+  - `skills/copywriting/SKILL.md` - When the user wants to write, rewrite, or improve marketing copy for any page — including homepage, landing pages, pricing pages, feature pages, about pages, or product pages. Also use when the user says "write copy for,
+  - `skills/copywriting/references/copy-frameworks.md` - Headline formulas, page section types, and structural templates.
+  - `skills/copywriting/references/natural-transitions.md` - Transitional phrases to guide readers through your content. Good signposting improves readability, user engagement, and helps search engines understand content structure.
+  - `skills/crafting-effective-readmes/README.md` - Not all READMEs are the same. An open-source library needs different documentation than a personal project or an internal tool. This skill provides:
+  - `skills/crafting-effective-readmes/SKILL.md` - Use when writing or improving README files. Not all READMEs are the same — provides templates and guidance matched to your audience and project type.
+  - `skills/crafting-effective-readmes/references/art-of-readme.md` - This article can also be read in [Chinese](README-zh.md), [Japanese](README-ja-JP.md), [Brazilian Portuguese](README-pt-BR.md), [Spanish](README-es-ES.md), [German](README-de-DE.md), [French](README-fr.md) and [Tradition
+  - `skills/crafting-effective-readmes/references/make-a-readme.md` - > Source: [makeareadme.com](https://www.makeareadme.com) by Danny Guo > > "Because no one can read your mind (yet)"
+  - `skills/crafting-effective-readmes/references/standard-readme-example-maximal.md` - ![GitHub Created At](https://img.shields.io/github/created-at/RichardLitt/standard-readme?color=bright-green&style=flat-square) ![GitHub contributors](https://img.shields.io/github/contributors/RichardLitt/standard-readm
+  - `skills/crafting-effective-readmes/references/standard-readme-example-minimal.md` - This is an example file with default selections.
+  - `skills/crafting-effective-readmes/references/standard-readme-spec.md` - > Source: [Standard Readme](https://github.com/RichardLitt/standard-readme) by Richard Litt
+  - `skills/crafting-effective-readmes/section-checklist.md` - Quick reference for which sections to include based on project type.
+  - `skills/crafting-effective-readmes/style-guide.md` - For general writing advice — clear prose, Strunk's rules, and AI patterns to avoid — use the writing-clearly-and-concisely skill.
+  - `skills/crafting-effective-readmes/templates/internal.md` - [2-3 sentences on what this does, why it exists, and where it fits in the system architecture.]
+  - `skills/crafting-effective-readmes/templates/oss.md` - Use this template for projects intended for public use and contribution.
+  - `skills/crafting-effective-readmes/templates/personal.md` - Use this template for side projects, portfolio pieces, and experiments. Balance between documenting for future-you and showcasing for others.
+  - `skills/crafting-effective-readmes/templates/xdg-config.md` - Use this template for XDG config directories, dotfiles, script folders, and any local directory you'll return to later wondering "what is this?"
+  - `skills/crafting-effective-readmes/using-references.md` - Templates are your primary tool for writing READMEs. References provide depth - use them to refine your understanding or handle edge cases.
+  - `skills/create-auth/SKILL.md` - Skill for creating auth layers in TypeScript/JavaScript apps using Better Auth.
+  - `skills/daily-meeting-update/README.md` - The Daily Meeting Update skill helps developers prepare for daily standups or scrum meetings by:
+  - `skills/daily-meeting-update/SKILL.md` - "Interactive daily standup/meeting update generator. Use when user says 'daily', 'standup', 'scrum update', 'status update', 'what did I do yesterday', 'prepare for meeting', 'morning update', or 'team sync'. Pulls activ
+  - `skills/database-schema-designer/README.md` - The Database Schema Designer skill helps you create robust, scalable database schemas by providing:
+  - `skills/database-schema-designer/SKILL.md` - Design robust, scalable database schemas for SQL and NoSQL databases. Provides normalization guidelines, indexing strategies, migration patterns, constraint design, and performance optimization. Ensures data integrity, q
+  - `skills/database-schema-designer/references/schema-design-checklist.md` - Complete checklist for designing and reviewing database schemas.
+  - `skills/datadog-cli/README.md` - A Claude Code skill for debugging and triaging with [Datadog](https://www.datadoghq.com/) logs, metrics, and dashboards.
+  - `skills/datadog-cli/SKILL.md` - Datadog CLI for searching logs, querying metrics, tracing requests, and managing dashboards. Use this when debugging production issues or working with Datadog observability.
+  - `skills/datadog-cli/references/dashboards.md` - $(jq -r '.dashboard.description // ""' /tmp/dashboard.json)
+  - `skills/datadog-cli/references/logs-commands.md` - | Flag | Default | Description | |------|---------|-------------| | --query | * | Datadog search query | | --from | 15m | Start time | | --to | now | End time | | --limit | 100 | Max results (max: 1000) | | --sort | -tim
+  - `skills/datadog-cli/references/metrics.md` - | Flag | Default | Description | |------|---------|-------------| | --query | required | Metrics query | | --from | 15m | Start time | | --to | now | End time |
+  - `skills/datadog-cli/references/query-syntax.md` - | Operator | Example | Description | |----------|---------|-------------| | AND | service:api status:error | Both conditions (implicit) | | OR | status:error OR status:warn | Either condition | | - | -status:info | Exclu
+  - `skills/datadog-cli/references/workflows.md` - Step-by-step workflow for investigating production issues.
+  - `skills/deep-research/SKILL.md` - Deep research with multi-stage verification pipeline inspired by Lutum Veritas. Use for comprehensive, verified research with claim audits and cross-referencing. Triggered by "deep research", "thorough research", or "/de
+  - `skills/dependency-updater/README.md` - The Dependency Updater skill provides intelligent, language-agnostic dependency management that:
+  - `skills/dependency-updater/SKILL.md` - Smart dependency management for any language. Auto-detects project type, applies safe updates automatically, prompts for major versions, diagnoses and fixes dependency issues.
+  - `skills/design-md/README.md` - This repository follows the **Agent Skills** open standard. Each skill is self-contained with its own logic, workflow, and reference materials.
+  - `skills/design-md/SKILL.md` - Analyze Stitch projects and synthesize a semantic design system into DESIGN.md files
+  - `skills/design-md/examples/DESIGN.md` - The Furniture Collections List embodies a **sophisticated, minimalist sanctuary** that marries the pristine simplicity of Scandinavian design with the refined visual language of luxury editorial presentation. The interfa
+  - `skills/design-system-starter/README.md` - This skill helps you build robust, scalable design systems that ensure visual consistency and exceptional user experiences across your products. It provides structured guidance for:
+  - `skills/design-system-starter/SKILL.md` - Create and evolve design systems with design tokens, component architecture, accessibility guidelines, and documentation templates. Ensures consistent, scalable, and accessible UI across products.
+  - `skills/design-system-starter/checklists/design-system-checklist.md` - Use this comprehensive checklist when creating or auditing a design system.
+  - `skills/design-system-starter/references/component-examples.md` - Detailed implementation examples for common design system components.
+  - `skills/difficult-workplace-conversations/README.md` - Workplace conversations become difficult when emotions run high, stakes feel significant, or relationships are at risk. This skill exists to help you:
+  - `skills/difficult-workplace-conversations/SKILL.md` - Structured approach to workplace conflicts, performance discussions, and challenging feedback using preparation-delivery-followup framework. Use when preparing for tough conversations, addressing conflicts, giving critic
+  - `skills/difficult-workplace-conversations/references/conversation-framework.md` - Complete guide to the three-phase framework for challenging workplace conversations.
+  - `skills/difficult-workplace-conversations/references/delivery-scripts.md` - Ready-to-use scripts, phrases, and techniques for navigating challenging moments.
+  - `skills/difficult-workplace-conversations/references/emotional-regulation.md` - Techniques for managing your own emotions before, during, and after challenging workplace conversations.
+  - `skills/difficult-workplace-conversations/references/preparation-template.md` - Use this worksheet to prepare before any challenging conversation.
+  - `skills/domain-name-brainstormer/README.md` - Finding the perfect domain name is time-consuming and frustrating. You think of a great name, only to find it's taken. This skill automates the entire process by generating creative, relevant domain options and checking 
+  - `skills/domain-name-brainstormer/SKILL.md` - Generates creative domain name ideas for your project and checks availability across multiple TLDs (.com, .io, .dev, .ai, etc.). Saves hours of brainstorming and manual checking.
+  - `skills/draw-io/README.md` - This skill enables AI-assisted creation and maintenance of draw.io architecture diagrams, flowcharts, and technical documentation visuals. It ensures consistent styling, proper layout, and automated PNG conversion for pr
+  - `skills/draw-io/SKILL.md` - draw.io diagram creation, editing, and review. Use for .drawio XML editing, PNG conversion, layout adjustment, and AWS icon usage.
+  - `skills/draw-io/references/aws-icons.md` - | 接頭辞 | 例 | |--------|-----| | Amazon | Amazon ECS, Amazon ECR, Amazon S3, Amazon RDS, Amazon CloudWatch | | AWS | AWS Lambda, AWS IAM, AWS CloudFormation, AWS Step Functions | | Elastic | Elastic Load Balancing |
+  - `skills/draw-io/references/layout-guidelines.md` - | フロー種別 | 線種 | 用途 | |-----------|------|------| | Ingestion Flow | 破線 | データ取り込み | | Query Flow | 実線 | クエリ・参照 | | Control Flow | 点線 | 制御・管理 |
+  - `skills/email-sequence/SKILL.md` - When the user wants to create or optimize an email sequence, drip campaign, automated email flow, or lifecycle email program. Also use when the user mentions "email sequence," "drip campaign," "nurture sequence," "onboar
+  - `skills/email-sequence/references/copy-guidelines.md` - Copy Guidelines definition.
+  - `skills/email-sequence/references/email-types.md` - A comprehensive guide to lifecycle and campaign emails. Use this as an audit checklist and implementation reference.
+  - `skills/email-sequence/references/sequence-templates.md` - Detailed templates for common email sequences.
+  - `skills/enhance-prompt/README.md` - This repository follows the **Agent Skills** open standard. Each skill is self-contained with its own logic, workflow, and reference materials.
+  - `skills/enhance-prompt/SKILL.md` - Transforms vague UI ideas into polished, Stitch-optimized prompts. Enhances specificity, adds UI/UX keywords, injects design system context, and structures output for better generation results.
+  - `skills/enhance-prompt/references/KEYWORDS.md` - Progressive disclosure reference for common UI terminology and adjective palettes.
+  - `skills/excalidraw/README.md` - This skill provides a pattern for working with Excalidraw files (*.excalidraw, *.excalidraw.json) without exhausting the main agent's context budget. Excalidraw JSON files are extremely verbose (4k-22k tokens per file) b
+  - `skills/excalidraw/SKILL.md` - "Use when working with *.excalidraw or *.excalidraw.json files, user mentions diagrams/flowcharts, or requests architecture visualization - delegates all Excalidraw operations to subagents to prevent context exhaustion f
+  - `skills/feedback-mastery/README.md` - This skill provides structured approaches to challenging interpersonal situations in the workplace. Whether you need to address performance issues, resolve conflicts between team members, give constructive feedback, or m
+  - `skills/feedback-mastery/SKILL.md` - Navigate difficult conversations and deliver constructive feedback using structured frameworks. Covers the Preparation-Delivery-Follow-up model and Situation-Behavior-Impact (SBI) feedback technique. Use when preparing f
+  - `skills/feedback-mastery/references/difficult-conversation-scripts.md` - Ready-to-use opening lines, responses to common reactions, and frameworks for navigating challenging workplace conversations.
+  - `skills/feedback-mastery/references/expectation-alignment.md` - Frameworks for setting, communicating, and managing expectations with teammates, stakeholders, and leadership.
+  - `skills/feedback-mastery/references/feedback-sbi-model.md` - The Situation-Behavior-Impact (SBI) model, developed by the Center for Creative Leadership, provides a structured approach to giving clear, objective feedback that minimizes defensiveness and promotes improvement.
+  - `skills/flpbalada-business-model-canvas/SKILL.md` - Design and analyze business models using the Business Model Canvas framework.
+  - `skills/flpbalada-code-architecture-tailwind-v4-best-practices/SKILL.md` - Guides Tailwind CSS v4 patterns for buttons and components. Use this skill when creating components with variants, choosing between CVA/tailwind-variants, or configuring Tailwind v4's CSS-first approach.
+  - `skills/flpbalada-code-architecture-wrong-abstraction/SKILL.md` - Guides when to abstract vs duplicate code. Use this skill when creating shared utilities, deciding between DRY/WET approaches, or refactoring existing abstractions.
+  - `skills/flpbalada-cognitive-biases/SKILL.md` - Apply cognitive bias knowledge to product design and decision-making. Use when
+  - `skills/flpbalada-cognitive-fluency-psychology/SKILL.md` - Apply cognitive fluency principles to improve clarity, trust, and conversion.
+  - `skills/flpbalada-cognitive-load/SKILL.md` - Design experiences that optimize mental resources using Cognitive Load Theory.
+  - `skills/flpbalada-css-container-queries/SKILL.md` - Apply CSS container queries for component-based responsive design. Use when implementing responsive components that adapt to their container size rather than viewport size.
+  - `skills/flpbalada-curiosity-gap/SKILL.md` - Create engagement through strategic information gaps that drive user action.
+  - `skills/flpbalada-five-whys/SKILL.md` - Conduct root cause analysis using the Five Whys technique. Use when
+  - `skills/flpbalada-fogg-behavior-model/SKILL.md` - Design behavior change using the B=MAP framework. Use when designing
+  - `skills/flpbalada-game-theory-tit-for-tat/SKILL.md` - Apply Tit for Tat strategy for negotiations, relationships, and repeated
+  - `skills/flpbalada-graph-thinking/SKILL.md` - Apply graph-based thinking to visualize complex relationships and solve
+  - `skills/flpbalada-halo-effect-psychology/SKILL.md` - Apply the halo effect in product design and UX. Use when designing first
+  - `skills/flpbalada-hicks-law/SKILL.md` - Optimize decision-making speed by managing choice quantity. Use when designing
+  - `skills/flpbalada-hooked-model/SKILL.md` - Design habit-forming products using the Hook cycle. Use when building
+  - `skills/flpbalada-hypothesis-tree/SKILL.md` - Structure complex questions into testable hypotheses. Use when validating
+  - `skills/flpbalada-jobs-to-be-done/SKILL.md` - Understand customer motivations through job theory. Use when defining product
+  - `skills/flpbalada-kanban/SKILL.md` - Visualize and optimize workflow with Kanban boards. Use when managing team
+  - `skills/flpbalada-loss-aversion-psychology/SKILL.md` - Leverage loss aversion in product design and messaging. Use when designing
+  - `skills/flpbalada-making-product-decisions/SKILL.md` - Framework for structured product decision-making. Use when facing complex
+  - `skills/flpbalada-naming-cheatsheet/SKILL.md` - Apply language-agnostic naming conventions using the A/HC/LC pattern. Use when naming variables, functions, or reviewing code for naming consistency.
+  - `skills/flpbalada-nextjs-image-art-direction/SKILL.md` - Implement art direction for Next.js images using getImageProps(). Use when
+  - `skills/flpbalada-pest-analysis/SKILL.md` - Guides PEST (Political, Economic, Social, Technological) analysis for strategic planning.
+  - `skills/flpbalada-progressive-disclosure/SKILL.md` - Reduce complexity by revealing information progressively. Use when designing
+  - `skills/flpbalada-project-structure/SKILL.md` - Guides React/Next.js/TypeScript project organization using feature-based architecture. Use when structuring new projects, reorganizing codebases, or deciding where to place new code.
+  - `skills/flpbalada-react-key-prop/SKILL.md` - Guides proper usage of the key prop in React lists. Use this skill when rendering lists, mapping arrays to components, or troubleshooting list-related state bugs.
+  - `skills/flpbalada-react-use-callback/SKILL.md` - Guides proper usage of the useCallback hook in React. Use this skill when optimizing function references, passing callbacks to memoized components, or preventing unnecessary re-renders.
+  - `skills/flpbalada-react-use-client-boundary/SKILL.md` - Guides proper usage of "use client" directive in React/Next.js. Use this skill
+  - `skills/flpbalada-react-use-state/SKILL.md` - Guides proper usage of React useState hook. Use this skill when adding state to components, deciding between useState vs alternatives, or troubleshooting state update issues.
+  - `skills/flpbalada-self-initiated-triggers/SKILL.md` - Design internal triggers for sustained user engagement. Use when building
+  - `skills/flpbalada-social-proof-psychology/SKILL.md` - Leverage social proof principles to build trust and influence user behavior.
+  - `skills/flpbalada-status-quo-bias/SKILL.md` - Understand and design for users' preference for current state over change. Use
+  - `skills/flpbalada-theme-epic-story/SKILL.md` - Structure product work hierarchically using themes, epics, and stories. Use
+  - `skills/flpbalada-trust-psychology/SKILL.md` - Build trust signals that reduce perceived risk and enable user action. Use
+  - `skills/flpbalada-typescript-advanced-types/SKILL.md` - Master TypeScript's advanced type system including generics, conditional types, mapped types, template literals, and utility types for building type-safe applications. Use when implementing complex type logic, creating r
+  - `skills/flpbalada-typescript-best-practices/SKILL.md` - Guides TypeScript best practices for type safety, code organization, and maintainability. Use this skill when configuring TypeScript projects, deciding on typing strategies, writing async code, or reviewing TypeScript co
+  - `skills/flpbalada-typescript-interface-vs-type/SKILL.md` - Guides when to use interface vs type in TypeScript. Use this skill when defining object types, extending types, or choosing between interface and type aliases.
+  - `skills/flpbalada-typescript-satisfies-operator/SKILL.md` - Guides proper usage of TypeScript's satisfies operator vs type annotations. Use this skill when deciding between type annotations (colon) and satisfies, validating object shapes while preserving literal types, or trouble
+  - `skills/flpbalada-user-story-fundamentals/SKILL.md` - Capture requirements from user perspective with structured user stories. Use
+  - `skills/flpbalada-visual-cues-cta-psychology/SKILL.md` - Design effective CTAs using visual attention and gaze psychology principles.
+  - `skills/flpbalada-what-not-to-do-as-product-manager/SKILL.md` - Anti-patterns and mistakes to avoid as a product manager. Use when evaluating
+  - `skills/form-cro/SKILL.md` - When the user wants to optimize any form that is NOT signup/registration — including lead capture forms, contact forms, demo request forms, application forms, survey forms, or checkout forms. Also use when the user menti
+  - `skills/free-tool-strategy/SKILL.md` - When the user wants to plan, evaluate, or build a free tool for marketing purposes — lead generation, SEO value, or brand awareness. Also use when the user mentions "engineering as marketing," "free tool," "marketing too
+  - `skills/free-tool-strategy/references/tool-types.md` - Detailed guide to each type of marketing tool you can build.
+  - `skills/frontend-to-backend-requirements/README.md` - This skill helps frontend developers communicate **what data they need** without dictating **how backend should implement it**. It creates a structured requirements document that describes UI needs, user actions, states 
+  - `skills/frontend-to-backend-requirements/SKILL.md` - Document frontend data needs for backend developers. Use when frontend needs to communicate API requirements to backend, or user says 'backend requirements', 'what data do I need', 'API requirements', or is describing da
+  - `skills/game-changing-features/README.md` - This skill shifts your mindset from incremental improvements to transformative thinking. Instead of asking "what feature should we add next?", it asks "what would make this 10x more valuable?" It's designed for founders,
+  - `skills/game-changing-features/SKILL.md` - Find 10x product opportunities and high-leverage improvements. Use when user wants strategic product thinking, mentions '10x', wants to find high-impact features, or says 'what would make this 10x better', 'product strat
+  - `skills/gemini/README.md` - The Gemini skill provides access to Google's flagship Gemini 3 Pro model through the Gemini CLI, offering:
+  - `skills/gemini/SKILL.md` - Use when the user asks to run Gemini CLI for code review, plan review, or big context (>200k) processing. Ideal for comprehensive analysis requiring large context windows. Uses Gemini 3 Pro by default for state-of-the-ar
+  - `skills/gepetto/README.md` - > 🪵 Like Geppetto carved Pinocchio from rough wood, transform vague ideas into living implementation plans
+  - `skills/gepetto/SKILL.md` - Creates detailed, sectionized implementation plans through research, stakeholder interviews, and multi-LLM review. Use when planning features that need thorough pre-implementation analysis.
+  - `skills/gepetto/references/external-review.md` - Launch TWO parallel Bash commands to get external reviews: 1. **Gemini CLI** - Google's Gemini 3 Pro 2. **Codex CLI** - OpenAI's GPT-5.2
+  - `skills/gepetto/references/interview-protocol.md` - The interview runs directly in this skill (not subagent) because AskUserQuestion only works in main conversation context.
+  - `skills/gepetto/references/research-protocol.md` - "Analyze existing patterns, conventions, dependencies"
+  - `skills/gepetto/references/section-index.md` - Create <planning_dir>/sections/index.md to define implementation sections.
+  - `skills/gepetto/references/section-splitting.md` - Write individual section files from the plan using **parallel subagents** for efficiency.
+  - `skills/gsap/README.md` - professional-grade javascript animation library for the modern web.
+  - `skills/gsap/SKILL.md` - Use when implementing web animations, timeline sequencing, scroll-triggered animations, SVG animations, layout transitions, or using GSAP, ScrollTrigger, ScrollSmoother, SplitText, Flip, DrawSVG, MorphSVG, MotionPath, or
+  - `skills/gsap/references/00-cheatsheet.md` - 00 Cheatsheet definition.
+  - `skills/gsap/references/01-core.md` - Animates from current values TO specified values.
+  - `skills/gsap/references/02-easing.md` - 02 Easing definition.
+  - `skills/gsap/references/03-timeline.md` - The position parameter controls WHERE in the timeline a tween is placed.
+  - `skills/gsap/references/04-stagger.md` - For elements in a grid layout:
+  - `skills/gsap/references/05-utilities.md` - Map value from one range to another:
+  - `skills/gsap/references/06-scrolltrigger.md` - Link animation progress directly to scroll:
+  - `skills/gsap/references/07-scrollsmoother.md` - ScrollSmoother adds smooth scrolling while maintaining native scroll functionality.
+  - `skills/gsap/references/08-splittext.md` - Split text elements into characters, words, and lines for individual animation.
+  - `skills/gsap/references/09-svg-plugins.md` - Note (2026-02):** DrawSVGPlugin is available in the public gsap npm package (GSAP 3.13+) under the GSAP Standard No-Charge License.
+  - `skills/gsap/references/10-flip.md` - FLIP (First, Last, Invert, Play) technique for seamless layout animations.
+  - `skills/gsap/references/11-react.md` - The official hook for GSAP in React. Handles cleanup automatically.
+  - `skills/gsap/references/12-observer-draggable.md` - Unified scroll, touch, and pointer event detection.
+  - `skills/gsap/references/13-text-plugins.md` - Animates text content character by character.
+  - `skills/gsap-core/SKILL.md` - Use when implementing GSAP core animations, tweens, timeline sequencing, playback controls, or when using gsap.to(), gsap.from(), gsap.fromTo(), gsap.set(), gsap.timeline().
+  - `skills/gsap-draggable/SKILL.md` - Use when implementing drag interactions, draggable elements, throwing with inertia, bounds enforcement, drag-based UI, or using Draggable and InertiaPlugin.
+  - `skills/gsap-easing/SKILL.md` - Use when implementing animation easing functions, custom easing, elastic effects, bounce animations, or controlling animation velocity curves.
+  - `skills/gsap-flip/SKILL.md` - Use when implementing layout animations, FLIP transitions, position/scale/rotation animations between states, reordering effects, or using Flip plugin.
+  - `skills/gsap-observer/SKILL.md` - Use when implementing gesture detection, scroll/wheel/touch event handling, swipe detection, directional interactions, or using Observer plugin.
+  - `skills/gsap-performance/SKILL.md` - Use when optimizing GSAP animations, performance tuning, ticker configuration, stagger optimization, or improving animation frame rates.
+  - `skills/gsap-react/SKILL.md` - Use when using GSAP with React, useGSAP hook, React component animations, ScrollTrigger in React, or managing GSAP lifecycle in React components.
+  - `skills/gsap-scrolltrigger/SKILL.md` - Use when implementing scroll-based animations, scroll-driven effects, pinning elements, scrubbing animations, scroll callbacks, or when using ScrollTrigger plugin.
+  - `skills/gsap-setup/SKILL.md` - Use when setting up GSAP in a project, installing GSAP, registering plugins, configuring defaults, or implementing GSAP best practices and workflows.
+  - `skills/gsap-svg/SKILL.md` - Use when implementing SVG animations, stroke drawing, path morphing, motion along paths, or using DrawSVGPlugin, MorphSVGPlugin, MotionPathPlugin.
+  - `skills/gsap-text/SKILL.md` - Use when implementing text animations, text effects, character/word/line animations, text reveals, scrambling effects, or using SplitText, TextPlugin, ScrambleTextPlugin.
+  - `skills/gsap-utilities/SKILL.md` - Use when using GSAP utility functions, math helpers, data transformations, or when working with clamp, mapRange, random, and other GSAP utilities.
+  - `skills/humanizer/README.md` - Based on [Wikipedia's "Signs of AI writing"](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing) guide, maintained by WikiProject AI Cleanup. This comprehensive guide comes from observations of thousands of inst
+  - `skills/humanizer/SKILL.md` - |
+  - `skills/jira/README.md` - The Jira skill bridges the gap between natural language requests and Jira operations. Instead of remembering specific CLI commands or API calls, you can simply tell Claude what you want to do with your Jira tickets, and 
+  - `skills/jira/SKILL.md` - Use when the user mentions Jira issues (e.g., "PROJ-123"), asks about tickets, wants to create/view/update issues, check sprint status, or manage their Jira workflow. Triggers on keywords like "jira", "issue", "ticket", 
+  - `skills/jira/references/commands.md` - User needs ability to export data...
+  - `skills/jira/references/mcp.md` - "Implement user authentication",
+  - `skills/launch-strategy/SKILL.md` - "When the user wants to plan a product launch, feature announcement, or release strategy. Also use when the user mentions 'launch,' 'Product Hunt,' 'feature release,' 'announcement,' 'go-to-market,' 'beta launch,' 'early
+  - `skills/marketing-ideas/SKILL.md` - "When the user needs marketing ideas, inspiration, or strategies for their SaaS or software product. Also use when the user asks for 'marketing ideas,' 'growth ideas,' 'how to market,' 'marketing strategies,' 'marketing 
+  - `skills/marketing-ideas/references/ideas-by-category.md` - Complete list of proven marketing approaches organized by category.
+  - `skills/marketing-psychology/SKILL.md` - "When the user wants to apply psychological principles, mental models, or behavioral science to marketing. Also use when the user mentions 'psychology,' 'mental models,' 'cognitive bias,' 'persuasion,' 'behavioral scienc
+  - `skills/marp-slide/README.md` - This skill automates the creation of high-quality Marp presentations by providing: - 7 professionally designed themes (default, minimal, colorful, dark, gradient, tech, business) - Built-in best practices for slide struc
+  - `skills/marp-slide/SKILL.md` - Create professional Marp presentation slides with 7 beautiful themes (default, minimal, colorful, dark, gradient, tech, business). Use when users request slide creation, presentations, or Marp documents. Supports custom 
+  - `skills/marp-slide/assets/template-basic.md` - marp: true theme: default paginate: true
+  - `skills/marp-slide/assets/template-business.md` - marp: true theme: default paginate: true
+  - `skills/marp-slide/assets/template-colorful.md` - marp: true theme: default paginate: true
+  - `skills/marp-slide/assets/template-dark.md` - marp: true theme: default paginate: true
+  - `skills/marp-slide/assets/template-gradient.md` - marp: true theme: default paginate: true
+  - `skills/marp-slide/assets/template-minimal.md` - marp: true theme: default paginate: true
+  - `skills/marp-slide/assets/template-tech.md` - marp: true theme: default paginate: true
+  - `skills/marp-slide/references/advanced-features.md` - Advanced features of Marp Core and Marpit.
+  - `skills/marp-slide/references/best-practices.md` - Guidelines for creating "cool" high-quality slides.
+  - `skills/marp-slide/references/image-patterns.md` - Image placement and styling methods based on official Marpit image syntax.
+  - `skills/marp-slide/references/marp-syntax.md` - Basic Marp syntax based on official documentation.
+  - `skills/marp-slide/references/official-themes.md` - Explanation of the 3 official themes included in Marp Core.
+  - `skills/marp-slide/references/theme-css-guide.md` - How to create custom themes based on the official Marpit theme CSS specification.
+  - `skills/marp-slide/references/theme-selection.md` - Select the optimal theme from all 7 types according to your use case.
+  - `skills/meme-factory/README.md` - Meme Factory makes it easy to add humor and visual interest to technical communication. Whether you're celebrating a successful deploy, highlighting a code review comment, or just making your team laugh, this skill helps
+  - `skills/meme-factory/SKILL.md` - Generate memes using the memegen.link API. Use when users request memes, want to add humor to content, or need visual aids for social media. Supports 100+ popular templates with custom text and styling.
+  - `skills/meme-factory/references/examples.md` - These examples demonstrate: - Basic meme generation - Context-aware template selection - Integration with popular platforms - Error handling and validation - Batch generation workflows - Real-world use cases
+  - `skills/meme-factory/references/markdown-memes-guide.md` - A comprehensive toolbox for creating textual and image memes in Markdown-based blogs (MkDocs, Jekyll, Hugo, Astro, etc.)
+  - `skills/mermaid-diagrams/README.md` - Transform complex technical concepts into clear, maintainable diagrams that can be version-controlled alongside your code. Mermaid diagrams are rendered from simple text definitions, making them easy to update, review in
+  - `skills/mermaid-diagrams/SKILL.md` - Comprehensive guide for creating software diagrams using Mermaid syntax. Use when users need to create, visualize, or document software through diagrams including class diagrams (domain modeling, object-oriented design),
+  - `skills/mermaid-diagrams/references/advanced-features.md` - Advanced configuration, styling, theming, and other powerful features for creating professional diagrams.
+  - `skills/mermaid-diagrams/references/architecture-diagrams.md` - Architecture diagrams visualize cloud services, CI/CD deployments, and infrastructure relationships. Introduced in Mermaid v11.1.0.
+  - `skills/mermaid-diagrams/references/c4-diagrams.md` - The C4 model provides a hierarchical way to visualize software architecture at different levels of abstraction: Context, Containers, Components, and Code.
+  - `skills/mermaid-diagrams/references/class-diagrams.md` - Class diagrams model object-oriented designs and domain models. They show entities (classes), their attributes/methods, and relationships.
+  - `skills/mermaid-diagrams/references/erd-diagrams.md` - ERDs model database schemas, showing tables (entities), their columns (attributes), and relationships between tables. Essential for database design and documentation.
+  - `skills/mermaid-diagrams/references/flowcharts.md` - Flowcharts visualize processes, algorithms, decision trees, and user journeys. They show step-by-step progression through a system or workflow.
+  - `skills/mermaid-diagrams/references/sequence-diagrams.md` - Sequence diagrams show interactions between participants over time. They're ideal for API flows, authentication sequences, and system component interactions.
+  - `skills/mui/README.md` - This skill provides guidance and patterns for building React applications with Material-UI v7 (released March 2025). It covers component usage, the sx prop styling system, theme integration, responsive design, and MUI-sp
+  - `skills/mui/SKILL.md` - Material-UI v7 component library patterns including sx prop styling, theme integration, responsive design, and MUI-specific hooks. Use when working with MUI components, styling with sx prop, theme customization, or MUI u
+  - `skills/mui/resources/component-library.md` - Component Library definition.
+  - `skills/mui/resources/styling-guide.md` - The sx prop is the primary styling method in MUI v7+:
+  - `skills/mui/resources/theme-customization.md` - Theme Customization definition.
+  - `skills/naming-analyzer/README.md` - Good naming is one of the most important aspects of readable, maintainable code. This skill helps developers:
+  - `skills/naming-analyzer/SKILL.md` - Suggest better variable, function, and class names based on context and conventions.
+  - `skills/nuqs/README.md` - Best practices for nuqs - type-safe URL query state management for React.
+  - `skills/nuqs/SKILL.md` - Use when implementing URL query state in React, managing search params, syncing state with URL, building filterable/sortable lists, pagination with URL state, or using nuqs/useQueryState/useQueryStates hooks in Next.js, 
+  - `skills/onboarding-cro/SKILL.md` - When the user wants to optimize post-signup onboarding, user activation, first-run experience, or time-to-value. Also use when the user mentions "onboarding flow," "activation rate," "user activation," "first-run experie
+  - `skills/onboarding-cro/references/experiments.md` - Comprehensive list of A/B tests and experiments for user onboarding and activation.
+  - `skills/openapi-to-typescript/README.md` - This skill automates the process of generating type-safe TypeScript code from OpenAPI API specifications. It creates: - TypeScript interfaces for all schema definitions - Request/Response type definitions for API endpoin
+  - `skills/openapi-to-typescript/SKILL.md` - Converts OpenAPI 3.0 JSON/YAML to TypeScript interfaces and type guards. This skill should be used when the user asks to generate types from OpenAPI, convert schema to TS, create API interfaces, or generate TypeScript ty
+  - `skills/page-cro/SKILL.md` - When the user wants to optimize, improve, or increase conversions on any marketing page — including homepage, landing pages, pricing pages, feature pages, or blog posts. Also use when the user says "CRO," "conversion rat
+  - `skills/page-cro/references/experiments.md` - Comprehensive list of A/B tests and experiments organized by page type.
+  - `skills/paid-ads/SKILL.md` - "When the user wants help with paid advertising campaigns on Google Ads, Meta (Facebook/Instagram), LinkedIn, Twitter/X, or other ad platforms. Also use when the user mentions 'PPC,' 'paid media,' 'ad copy,' 'ad creative
+  - `skills/paid-ads/references/ad-copy-templates.md` - Detailed formulas and templates for writing high-converting ad copy.
+  - `skills/paid-ads/references/audience-targeting.md` - Detailed targeting strategies for each major ad platform.
+  - `skills/paid-ads/references/platform-setup-checklists.md` - Complete setup checklists for major ad platforms.
+  - `skills/payload/README.md` - Standalone Payload CMS development skill for AI coding agents.
+  - `skills/payload/SKILL.md` - Use when working with Payload CMS projects (payload.config.ts, collections, fields, hooks, access control, Payload API). Use when debugging validation errors, security issues, relationship queries, transactions, or hook 
+  - `skills/payload/reference/ACCESS-CONTROL-ADVANCED.md` - Advanced access control patterns including context-aware access, time-based restrictions, factory functions, and production templates.
+  - `skills/payload/reference/ACCESS-CONTROL.md` - Complete reference for access control patterns across collections, fields, and globals.
+  - `skills/payload/reference/ADAPTERS.md` - Complete reference for database, storage, and email adapters.
+  - `skills/payload/reference/ADVANCED.md` - Complete reference for authentication, jobs, custom endpoints, components, plugins, and localization.
+  - `skills/payload/reference/COLLECTIONS.md` - 'Blog posts and articles',
+  - `skills/payload/reference/ENDPOINTS.md` - 'Search posts',
+  - `skills/payload/reference/FIELD-TYPE-GUARDS.md` - Complete reference with detailed examples and patterns. See [FIELDS.md](FIELDS.md#field-type-guards) for quick reference table of all guards.
+  - `skills/payload/reference/FIELDS.md` - 'Call to action button',
+  - `skills/payload/reference/HOOKS.md` - Complete reference for collection hooks, field hooks, and hook context patterns.
+  - `skills/payload/reference/PLUGIN-DEVELOPMENT.md` - Complete guide to creating Payload CMS plugins with TypeScript patterns, package structure, and best practices from the official Payload plugin template.
+  - `skills/payload/reference/QUERIES.md` - Complete reference for querying data across Local API, REST, and GraphQL.
+  - `skills/paywall-upgrade-cro/SKILL.md` - When the user wants to create or optimize in-app paywalls, upgrade screens, upsell modals, or feature gates. Also use when the user mentions "paywall," "upgrade screen," "upgrade modal," "upsell," "feature gate," "conver
+  - `skills/paywall-upgrade-cro/references/experiments.md` - Comprehensive list of A/B tests and experiments for paywall optimization.
+  - `skills/perplexity/README.md` - The Perplexity skill ensures you use Perplexity AI tools effectively and appropriately: - Choose the right tool (Search vs. Ask) - Respect token budgets with conservative limits - Defer to specialized tools when appropri
+  - `skills/perplexity/SKILL.md` - Web search and research using Perplexity AI. Use when user says "search", "find", "look up", "ask", "research", or "what's the latest" for generic queries. NOT for library/framework docs (use Context7) or workspace quest
+  - `skills/planning-with-files/SKILL.md` - Implements Manus-style file-based planning for complex tasks. Creates task_plan.md, findings.md, and progress.md. Use when starting complex multi-step tasks, research projects, or any task requiring >5 tool calls. Now wi
+  - `skills/planning-with-files/examples.md` - User Request:** "Research the benefits of morning exercise and write a summary"
+  - `skills/planning-with-files/reference.md` - This skill is based on context engineering principles from Manus, the AI agent company acquired by Meta for $2 billion in December 2025.
+  - `skills/planning-with-files/templates/findings.md` - | Decision | Rationale | |----------|-----------| | | |
+  - `skills/planning-with-files/templates/progress.md` - | Test | Input | Expected | Actual | Status | |------|-------|----------|--------|--------| | | | | | |
+  - `skills/planning-with-files/templates/task_plan.md` - [One sentence describing the end state]
+  - `skills/plugin-forge/README.md` - Plugin Forge streamlines the entire lifecycle of Claude Code plugin development. It provides automation scripts, reference documentation, and structured workflows to help you create professional-quality plugins that inte
+  - `skills/plugin-forge/SKILL.md` - Create and manage Claude Code plugins with proper structure, manifests, and marketplace integration. Use when creating plugins for a marketplace, adding plugin components (commands, agents, hooks), bumping plugin version
+  - `skills/plugin-forge/references/marketplace-schema.md` - A marketplace is a JSON catalog enabling plugin discovery and distribution.
+  - `skills/plugin-forge/references/plugin-structure.md` - Location:** .claude-plugin/plugin.json (must be in this directory)
+  - `skills/plugin-forge/references/workflows.md` - Update .claude-plugin/marketplace.json by adding entry to plugins array:
+  - `skills/popup-cro/SKILL.md` - When the user wants to create or optimize popups, modals, overlays, slide-ins, or banners for conversion purposes. Also use when the user mentions "exit intent," "popup conversions," "modal optimization," "lead capture p
+  - `skills/pricing-strategy/SKILL.md` - "When the user wants help with pricing decisions, packaging, or monetization strategy. Also use when the user mentions 'pricing,' 'pricing tiers,' 'freemium,' 'free trial,' 'packaging,' 'price increase,' 'value metric,' 
+  - `skills/pricing-strategy/references/research-methods.md` - The Van Westendorp survey identifies the acceptable price range for your product.
+  - `skills/pricing-strategy/references/tier-structure.md` - 2 tiers:** Simple, clear choice - Works for: Clear SMB vs. Enterprise split - Risk: May leave money on table
+  - `skills/product-marketing-context/SKILL.md` - "When the user wants to create or update their product marketing context document. Also use when the user mentions 'product context,' 'marketing context,' 'set up context,' 'positioning,' or wants to avoid repeating foun
+  - `skills/professional-communication/README.md` - This skill provides frameworks and best practices for clear, professional written communication. It helps software developers improve their communication effectiveness across emails, team chats, meetings, and cross-funct
+  - `skills/professional-communication/SKILL.md` - Guide technical communication for software developers. Covers email structure, team messaging etiquette, meeting agendas, and adapting messages for technical vs non-technical audiences. Use when drafting professional mes
+  - `skills/professional-communication/references/email-templates.md` - Ready-to-use email templates for common software development scenarios. Adapt the tone and detail level to your audience.
+  - `skills/professional-communication/references/jargon-simplification.md` - Translations from technical terminology to accessible language. Use when communicating with non-technical stakeholders, customers, or cross-functional teams.
+  - `skills/professional-communication/references/meeting-structures.md` - Templates and structures for common software development meetings. Use these to run effective meetings and ensure productive outcomes.
+  - `skills/professional-communication/references/remote-async-communication.md` - Guide to effective communication in remote-first and async-first environments.
+  - `skills/programmatic-seo/SKILL.md` - When the user wants to create SEO-driven pages at scale using templates and data. Also use when the user mentions "programmatic SEO," "template pages," "pages at scale," "directory pages," "location pages," "[keyword] + 
+  - `skills/programmatic-seo/references/playbooks.md` - Beyond mixing and matching data point permutations, these are the proven playbooks for programmatic SEO.
+  - `skills/qa-test-planner/README.md` - The QA Test Planner skill helps quality assurance professionals create thorough, well-structured testing documentation quickly and consistently. It eliminates the repetitive work of formatting test plans and cases while 
+  - `skills/qa-test-planner/SKILL.md` - Generate comprehensive test plans, manual test cases, regression test suites, and bug reports for QA engineers. Includes Figma MCP integration for design validation.
+  - `skills/qa-test-planner/references/bug_report_templates.md` - [2-3 sentences clearly describing what the bug is and its impact]
+  - `skills/qa-test-planner/references/figma_validation.md` - Guide for validating UI implementation against Figma designs using Figma MCP.
+  - `skills/qa-test-planner/references/regression_testing.md` - | Suite | Total | Pass | Fail | Blocked | Pass Rate | |-------|-------|------|------|---------|-----------| | Smoke | 10 | 10 | 0 | 0 | 100% | | P0 Critical | 25 | 23 | 2 | 0 | 92% | | P1 High | 50 | 47 | 2 | 1 | 94% | |
+  - `skills/qa-test-planner/references/test_case_templates.md` - Standard templates for creating consistent, comprehensive test cases.
+  - `skills/react-19/SKILL.md` - >
+  - `skills/react-19/references/anti-patterns.md` - Patterns that were acceptable (or even recommended) before but should be avoided in React 19.
+  - `skills/react-19/references/deprecations.md` - Complete guide to deprecated and removed features with migration paths.
+  - `skills/react-19/references/new-hooks.md` - Complete API reference for hooks introduced in React 19.
+  - `skills/react-19/references/paradigm-shifts.md` - How to **think** in React 19. These are fundamental mental model changes, not just new APIs.
+  - `skills/react-19/references/react-19-2-features.md` - Features added after the initial React 19.0 release.
+  - `skills/react-19/references/react-compiler.md` - React Compiler is a build-time tool that automatically optimizes React applications.
+  - `skills/react-19/references/server-components.md` - React 19 stabilizes Server Components and Server Actions/Functions.
+  - `skills/react-19/references/suspense-streaming.md` - React 19 brings significant improvements to Suspense behavior, streaming, and error handling.
+  - `skills/react-19/references/typescript-changes.md` - Breaking changes to @types/react and @types/react-dom with migration paths.
+  - `skills/react-best-practices/AGENTS.md` - Version 1.0.0** Vercel Engineering January 2026
+  - `skills/react-best-practices/README.md` - A structured repository for creating and maintaining React Best Practices optimized for agents and LLMs.
+  - `skills/react-best-practices/SKILL.md` - React and Next.js performance optimization guidelines from Vercel Engineering. This skill should be used when writing, reviewing, or refactoring React/Next.js code to ensure optimal performance patterns. Triggers on task
+  - `skills/react-best-practices/rules/_sections.md` - This file defines all sections, their ordering, impact levels, and descriptions. The section ID (in parentheses) is the filename prefix used to group rules.
+  - `skills/react-best-practices/rules/_template.md` - title: Rule Title Here impact: MEDIUM impactDescription: Optional description of impact (e.g., "20-50% improvement") tags: tag1, tag2
+  - `skills/react-best-practices/rules/advanced-event-handler-refs.md` - title: Store Event Handlers in Refs impact: LOW impactDescription: stable subscriptions tags: advanced, hooks, refs, event-handlers, optimization
+  - `skills/react-best-practices/rules/advanced-init-once.md` - title: Initialize App Once, Not Per Mount impact: LOW-MEDIUM impactDescription: avoids duplicate init in development tags: initialization, useEffect, app-startup, side-effects
+  - `skills/react-best-practices/rules/advanced-use-latest.md` - title: useEffectEvent for Stable Callback Refs impact: LOW impactDescription: prevents effect re-runs tags: advanced, hooks, useEffectEvent, refs, optimization
+  - `skills/react-best-practices/rules/async-api-routes.md` - title: Prevent Waterfall Chains in API Routes impact: CRITICAL impactDescription: 2-10× improvement tags: api-routes, server-actions, waterfalls, parallelization
+  - `skills/react-best-practices/rules/async-defer-await.md` - title: Defer Await Until Needed impact: HIGH impactDescription: avoids blocking unused code paths tags: async, await, conditional, optimization
+  - `skills/react-best-practices/rules/async-dependencies.md` - title: Dependency-Based Parallelization impact: CRITICAL impactDescription: 2-10× improvement tags: async, parallelization, dependencies, better-all
+  - `skills/react-best-practices/rules/async-parallel.md` - title: Promise.all() for Independent Operations impact: CRITICAL impactDescription: 2-10× improvement tags: async, parallelization, promises, waterfalls
+  - `skills/react-best-practices/rules/async-suspense-boundaries.md` - title: Strategic Suspense Boundaries impact: HIGH impactDescription: faster initial paint tags: async, suspense, streaming, layout-shift
+  - `skills/react-best-practices/rules/bundle-barrel-imports.md` - title: Avoid Barrel File Imports impact: CRITICAL impactDescription: 200-800ms import cost, slow builds tags: bundle, imports, tree-shaking, barrel-files, performance
+  - `skills/react-best-practices/rules/bundle-conditional.md` - title: Conditional Module Loading impact: HIGH impactDescription: loads large data only when needed tags: bundle, conditional-loading, lazy-loading
+  - `skills/react-best-practices/rules/bundle-defer-third-party.md` - title: Defer Non-Critical Third-Party Libraries impact: MEDIUM impactDescription: loads after hydration tags: bundle, third-party, analytics, defer
+  - `skills/react-best-practices/rules/bundle-dynamic-imports.md` - title: Dynamic Imports for Heavy Components impact: CRITICAL impactDescription: directly affects TTI and LCP tags: bundle, dynamic-import, code-splitting, next-dynamic
+  - `skills/react-best-practices/rules/bundle-preload.md` - title: Preload Based on User Intent impact: MEDIUM impactDescription: reduces perceived latency tags: bundle, preload, user-intent, hover
+  - `skills/react-best-practices/rules/client-event-listeners.md` - title: Deduplicate Global Event Listeners impact: LOW impactDescription: single listener for N components tags: client, swr, event-listeners, subscription
+  - `skills/react-best-practices/rules/client-localstorage-schema.md` - title: Version and Minimize localStorage Data impact: MEDIUM impactDescription: prevents schema conflicts, reduces storage size tags: client, localStorage, storage, versioning, data-minimization
+  - `skills/react-best-practices/rules/client-passive-event-listeners.md` - title: Use Passive Event Listeners for Scrolling Performance impact: MEDIUM impactDescription: eliminates scroll delay caused by event listeners tags: client, event-listeners, scrolling, performance, touch, wheel
+  - `skills/react-best-practices/rules/client-swr-dedup.md` - title: Use SWR for Automatic Deduplication impact: MEDIUM-HIGH impactDescription: automatic deduplication tags: client, swr, deduplication, data-fetching
+  - `skills/react-best-practices/rules/js-batch-dom-css.md` - title: Avoid Layout Thrashing impact: MEDIUM impactDescription: prevents forced synchronous layouts and reduces performance bottlenecks tags: javascript, dom, css, performance, reflow, layout-thrashing
+  - `skills/react-best-practices/rules/js-cache-function-results.md` - title: Cache Repeated Function Calls impact: MEDIUM impactDescription: avoid redundant computation tags: javascript, cache, memoization, performance
+  - `skills/react-best-practices/rules/js-cache-property-access.md` - title: Cache Property Access in Loops impact: LOW-MEDIUM impactDescription: reduces lookups tags: javascript, loops, optimization, caching
+  - `skills/react-best-practices/rules/js-cache-storage.md` - title: Cache Storage API Calls impact: LOW-MEDIUM impactDescription: reduces expensive I/O tags: javascript, localStorage, storage, caching, performance
+  - `skills/react-best-practices/rules/js-combine-iterations.md` - title: Combine Multiple Array Iterations impact: LOW-MEDIUM impactDescription: reduces iterations tags: javascript, arrays, loops, performance
+  - `skills/react-best-practices/rules/js-early-exit.md` - title: Early Return from Functions impact: LOW-MEDIUM impactDescription: avoids unnecessary computation tags: javascript, functions, optimization, early-return
+  - `skills/react-best-practices/rules/js-hoist-regexp.md` - title: Hoist RegExp Creation impact: LOW-MEDIUM impactDescription: avoids recreation tags: javascript, regexp, optimization, memoization
+  - `skills/react-best-practices/rules/js-index-maps.md` - title: Build Index Maps for Repeated Lookups impact: LOW-MEDIUM impactDescription: 1M ops to 2K ops tags: javascript, map, indexing, optimization, performance
+  - `skills/react-best-practices/rules/js-length-check-first.md` - title: Early Length Check for Array Comparisons impact: MEDIUM-HIGH impactDescription: avoids expensive operations when lengths differ tags: javascript, arrays, performance, optimization, comparison
+  - `skills/react-best-practices/rules/js-min-max-loop.md` - title: Use Loop for Min/Max Instead of Sort impact: LOW impactDescription: O(n) instead of O(n log n) tags: javascript, arrays, performance, sorting, algorithms
+  - `skills/react-best-practices/rules/js-set-map-lookups.md` - title: Use Set/Map for O(1) Lookups impact: LOW-MEDIUM impactDescription: O(n) to O(1) tags: javascript, set, map, data-structures, performance
+  - `skills/react-best-practices/rules/js-tosorted-immutable.md` - title: Use toSorted() Instead of sort() for Immutability impact: MEDIUM-HIGH impactDescription: prevents mutation bugs in React state tags: javascript, arrays, immutability, react, state, mutation
+  - `skills/react-best-practices/rules/rendering-activity.md` - title: Use Activity Component for Show/Hide impact: MEDIUM impactDescription: preserves state/DOM tags: rendering, activity, visibility, state-preservation
+  - `skills/react-best-practices/rules/rendering-animate-svg-wrapper.md` - title: Animate SVG Wrapper Instead of SVG Element impact: LOW impactDescription: enables hardware acceleration tags: rendering, svg, css, animation, performance
+  - `skills/react-best-practices/rules/rendering-conditional-render.md` - title: Use Explicit Conditional Rendering impact: LOW impactDescription: prevents rendering 0 or NaN tags: rendering, conditional, jsx, falsy-values
+  - `skills/react-best-practices/rules/rendering-content-visibility.md` - title: CSS content-visibility for Long Lists impact: HIGH impactDescription: faster initial render tags: rendering, css, content-visibility, long-lists
+  - `skills/react-best-practices/rules/rendering-hoist-jsx.md` - title: Hoist Static JSX Elements impact: LOW impactDescription: avoids re-creation tags: rendering, jsx, static, optimization
+  - `skills/react-best-practices/rules/rendering-hydration-no-flicker.md` - title: Prevent Hydration Mismatch Without Flickering impact: MEDIUM impactDescription: avoids visual flicker and hydration errors tags: rendering, ssr, hydration, localStorage, flicker
+  - `skills/react-best-practices/rules/rendering-hydration-suppress-warning.md` - title: Suppress Expected Hydration Mismatches impact: LOW-MEDIUM impactDescription: avoids noisy hydration warnings for known differences tags: rendering, hydration, ssr, nextjs
+  - `skills/react-best-practices/rules/rendering-svg-precision.md` - title: Optimize SVG Precision impact: LOW impactDescription: reduces file size tags: rendering, svg, optimization, svgo
+  - `skills/react-best-practices/rules/rendering-usetransition-loading.md` - title: Use useTransition Over Manual Loading States impact: LOW impactDescription: reduces re-renders and improves code clarity tags: rendering, transitions, useTransition, loading, state
+  - `skills/react-best-practices/rules/rerender-defer-reads.md` - title: Defer State Reads to Usage Point impact: MEDIUM impactDescription: avoids unnecessary subscriptions tags: rerender, searchParams, localStorage, optimization
+  - `skills/react-best-practices/rules/rerender-dependencies.md` - title: Narrow Effect Dependencies impact: LOW impactDescription: minimizes effect re-runs tags: rerender, useEffect, dependencies, optimization
+  - `skills/react-best-practices/rules/rerender-derived-state-no-effect.md` - title: Calculate Derived State During Rendering impact: MEDIUM impactDescription: avoids redundant renders and state drift tags: rerender, derived-state, useEffect, state
+  - `skills/react-best-practices/rules/rerender-derived-state.md` - title: Subscribe to Derived State impact: MEDIUM impactDescription: reduces re-render frequency tags: rerender, derived-state, media-query, optimization
+  - `skills/react-best-practices/rules/rerender-functional-setstate.md` - title: Use Functional setState Updates impact: MEDIUM impactDescription: prevents stale closures and unnecessary callback recreations tags: react, hooks, useState, useCallback, callbacks, closures
+  - `skills/react-best-practices/rules/rerender-lazy-state-init.md` - title: Use Lazy State Initialization impact: MEDIUM impactDescription: wasted computation on every render tags: react, hooks, useState, performance, initialization
+  - `skills/react-best-practices/rules/rerender-memo-with-default-value.md` - title: Extract Default Non-primitive Parameter Value from Memoized Component to Constant impact: MEDIUM impactDescription: restores memoization by using a constant for default value tags: rerender, memo, optimization
+  - `skills/react-best-practices/rules/rerender-memo.md` - title: Extract to Memoized Components impact: MEDIUM impactDescription: enables early returns tags: rerender, memo, useMemo, optimization
+  - `skills/react-best-practices/rules/rerender-move-effect-to-event.md` - title: Put Interaction Logic in Event Handlers impact: MEDIUM impactDescription: avoids effect re-runs and duplicate side effects tags: rerender, useEffect, events, side-effects, dependencies
+  - `skills/react-best-practices/rules/rerender-simple-expression-in-memo.md` - title: Do not wrap a simple expression with a primitive result type in useMemo impact: LOW-MEDIUM impactDescription: wasted computation on every render tags: rerender, useMemo, optimization
+  - `skills/react-best-practices/rules/rerender-transitions.md` - title: Use Transitions for Non-Urgent Updates impact: MEDIUM impactDescription: maintains UI responsiveness tags: rerender, transitions, startTransition, performance
+  - `skills/react-best-practices/rules/rerender-use-ref-transient-values.md` - title: Use useRef for Transient Values impact: MEDIUM impactDescription: avoids unnecessary re-renders on frequent updates tags: rerender, useref, state, performance
+  - `skills/react-best-practices/rules/server-after-nonblocking.md` - title: Use after() for Non-Blocking Operations impact: MEDIUM impactDescription: faster response times tags: server, async, logging, analytics, side-effects
+  - `skills/react-best-practices/rules/server-auth-actions.md` - title: Authenticate Server Actions Like API Routes impact: CRITICAL impactDescription: prevents unauthorized access to server mutations tags: server, server-actions, authentication, security, authorization
+  - `skills/react-best-practices/rules/server-cache-lru.md` - title: Cross-Request LRU Caching impact: HIGH impactDescription: caches across requests tags: server, cache, lru, cross-request
+  - `skills/react-best-practices/rules/server-cache-react.md` - title: Per-Request Deduplication with React.cache() impact: MEDIUM impactDescription: deduplicates within request tags: server, cache, react-cache, deduplication
+  - `skills/react-best-practices/rules/server-dedup-props.md` - title: Avoid Duplicate Serialization in RSC Props impact: LOW impactDescription: reduces network payload by avoiding duplicate serialization tags: server, rsc, serialization, props, client-components
+  - `skills/react-best-practices/rules/server-parallel-fetching.md` - title: Parallel Data Fetching with Component Composition impact: CRITICAL impactDescription: eliminates server-side waterfalls tags: server, rsc, parallel-fetching, composition
+  - `skills/react-best-practices/rules/server-serialization.md` - title: Minimize Serialization at RSC Boundaries impact: HIGH impactDescription: reduces data transfer size tags: server, rsc, serialization, props
+  - `skills/react-components/README.md` - This repository follows the **Agent Skills** open standard. Each skill is self-contained with its own logic, validation scripts, and design tokens.
+  - `skills/react-components/SKILL.md` - Converts Stitch designs into modular Vite and React components using system-level networking and AST-based validation.
+  - `skills/react-components/resources/architecture-checklist.md` - Architecture Checklist definition.
+  - `skills/react-components/resources/stitch-api-reference.md` - This document describes the data structures returned by the Stitch MCP server to ensure accurate component mapping.
+  - `skills/react-dev/README.md` - The react-dev skill provides comprehensive TypeScript patterns and best practices for building type-safe React applications. It serves as a complete reference for modern React development with TypeScript, covering React 
+  - `skills/react-dev/SKILL.md` - This skill should be used when building React components with TypeScript, typing hooks, handling events, or when React TypeScript, React 19, Server Components are mentioned. Covers type-safe patterns for React 18-19 incl
+  - `skills/react-dev/examples/generic-components.md` - Generic components provide type safety while maintaining reusability. TypeScript infers generic type parameters from prop values — no manual type annotations needed at call site.
+  - `skills/react-dev/examples/server-components.md` - React 19 Server Components run on server, can be async, enable zero-bundle data fetching. Server Actions handle mutations with progressive enhancement.
+  - `skills/react-dev/references/event-handlers.md` - Proper event typing ensures type-safe access to event properties and target elements.
+  - `skills/react-dev/references/hooks.md` - Type-safe hook patterns for useState, useRef, useReducer, useContext, and custom hooks.
+  - `skills/react-dev/references/react-19-patterns.md` - React 19 introduces breaking changes and new APIs requiring updated TypeScript patterns.
+  - `skills/react-dev/references/react-router.md` - React Router is a modern routing library that provides flexible client-side and server-side routing for React applications. It offers two primary modes of operation: Framework Mode and Data Mode, with first-class TypeScr
+  - `skills/react-dev/references/tanstack-router.md` - TanStack Router provides full type safety for routes, params, search params, and loader data.
+  - `skills/react-native-skills/AGENTS.md` - > **Note:** > This document is mainly for agents and LLMs to follow when maintaining, > generating, or refactoring React Native codebases. Humans > may also find it useful, but guidance here is optimized for automation >
+  - `skills/react-native-skills/README.md` - A structured repository for creating and maintaining React Native Best Practices optimized for agents and LLMs.
+  - `skills/react-native-skills/SKILL.md` - React Native and Expo best practices for building performant mobile apps. Use
+  - `skills/react-native-skills/rules/_sections.md` - This file defines all sections, their ordering, impact levels, and descriptions. The section ID (in parentheses) is the filename prefix used to group rules.
+  - `skills/react-native-skills/rules/_template.md` - title: Rule Title Here impact: MEDIUM impactDescription: Optional description of impact (e.g., "20-50% improvement") tags: tag1, tag2
+  - `skills/react-native-skills/rules/animation-derived-value.md` - title: Prefer useDerivedValue Over useAnimatedReaction impact: MEDIUM impactDescription: cleaner code, automatic dependency tracking tags: animation, reanimated, derived-value
+  - `skills/react-native-skills/rules/animation-gesture-detector-press.md` - title: Use GestureDetector for Animated Press States impact: MEDIUM impactDescription: UI thread animations, smoother press feedback tags: animation, gestures, press, reanimated
+  - `skills/react-native-skills/rules/animation-gpu-properties.md` - title: Animate Transform and Opacity Instead of Layout Properties impact: HIGH impactDescription: GPU-accelerated animations, no layout recalculation tags: animation, performance, reanimated, transform, opacity
+  - `skills/react-native-skills/rules/design-system-compound-components.md` - title: Use Compound Components Over Polymorphic Children impact: MEDIUM impactDescription: flexible composition, clearer API tags: design-system, components, composition
+  - `skills/react-native-skills/rules/fonts-config-plugin.md` - title: Load fonts natively at build time impact: LOW impactDescription: fonts available at launch, no async loading tags: fonts, expo, performance, config-plugin
+  - `skills/react-native-skills/rules/imports-design-system-folder.md` - title: Import from Design System Folder impact: LOW impactDescription: enables global changes and easy refactoring tags: imports, architecture, design-system
+  - `skills/react-native-skills/rules/js-hoist-intl.md` - title: Hoist Intl Formatter Creation impact: LOW-MEDIUM impactDescription: avoids expensive object recreation tags: javascript, intl, optimization, memoization
+  - `skills/react-native-skills/rules/list-performance-callbacks.md` - title: Hoist callbacks to the root of lists impact: MEDIUM impactDescription: Fewer re-renders and faster lists tags: tag1, tag2
+  - `skills/react-native-skills/rules/list-performance-function-references.md` - title: Optimize List Performance with Stable Object References impact: CRITICAL impactDescription: virtualization relies on reference stability tags: lists, performance, flatlist, virtualization
+  - `skills/react-native-skills/rules/list-performance-images.md` - title: Use Compressed Images in Lists impact: HIGH impactDescription: faster load times, less memory tags: lists, images, performance, optimization
+  - `skills/react-native-skills/rules/list-performance-inline-objects.md` - title: Avoid Inline Objects in renderItem impact: HIGH impactDescription: prevents unnecessary re-renders of memoized list items tags: lists, performance, flatlist, virtualization, memo
+  - `skills/react-native-skills/rules/list-performance-item-expensive.md` - title: Keep List Items Lightweight impact: HIGH impactDescription: reduces render time for visible items during scroll tags: lists, performance, virtualization, hooks
+  - `skills/react-native-skills/rules/list-performance-item-memo.md` - title: Pass Primitives to List Items for Memoization impact: HIGH impactDescription: enables effective memo() comparison tags: lists, performance, memo, primitives
+  - `skills/react-native-skills/rules/list-performance-item-types.md` - title: Use Item Types for Heterogeneous Lists impact: HIGH impactDescription: efficient recycling, less layout thrashing tags: list, performance, recycling, heterogeneous, LegendList
+  - `skills/react-native-skills/rules/list-performance-virtualize.md` - title: Use a List Virtualizer for Any List impact: HIGH impactDescription: reduced memory, faster mounts tags: lists, performance, virtualization, scrollview
+  - `skills/react-native-skills/rules/monorepo-native-deps-in-app.md` - title: Install Native Dependencies in App Directory impact: CRITICAL impactDescription: required for autolinking to work tags: monorepo, native, autolinking, installation
+  - `skills/react-native-skills/rules/monorepo-single-dependency-versions.md` - title: Use Single Dependency Versions Across Monorepo impact: MEDIUM impactDescription: avoids duplicate bundles, version conflicts tags: monorepo, dependencies, installation
+  - `skills/react-native-skills/rules/navigation-native-navigators.md` - title: Use Native Navigators for Navigation impact: HIGH impactDescription: native performance, platform-appropriate UI tags: navigation, react-navigation, expo-router, native-stack, tabs
+  - `skills/react-native-skills/rules/react-compiler-destructure-functions.md` - title: Destructure Functions Early in Render (React Compiler) impact: HIGH impactDescription: stable references, fewer re-renders tags: rerender, hooks, performance, react-compiler
+  - `skills/react-native-skills/rules/react-compiler-reanimated-shared-values.md` - title: Use .get() and .set() for Reanimated Shared Values (not .value) impact: LOW impactDescription: required for React Compiler compatibility tags: reanimated, react-compiler, shared-values
+  - `skills/react-native-skills/rules/react-state-dispatcher.md` - title: useState Dispatch updaters for State That Depends on Current Value impact: MEDIUM impactDescription: avoids stale closures, prevents unnecessary re-renders tags: state, hooks, useState, callbacks
+  - `skills/react-native-skills/rules/react-state-fallback.md` - title: Use fallback state instead of initialState impact: MEDIUM impactDescription: reactive fallbacks without syncing tags: state, hooks, derived-state, props, initialState
+  - `skills/react-native-skills/rules/react-state-minimize.md` - title: Minimize State Variables and Derive Values impact: MEDIUM impactDescription: fewer re-renders, less state drift tags: state, derived-state, hooks, optimization
+  - `skills/react-native-skills/rules/rendering-no-falsy-and.md` - title: Never Use && with Potentially Falsy Values impact: CRITICAL impactDescription: prevents production crash tags: rendering, conditional, jsx, crash
+  - `skills/react-native-skills/rules/rendering-text-in-text-component.md` - title: Wrap Strings in Text Components impact: CRITICAL impactDescription: prevents runtime crash tags: rendering, text, core
+  - `skills/react-native-skills/rules/scroll-position-no-state.md` - title: Never Track Scroll Position in useState impact: HIGH impactDescription: prevents render thrashing during scroll tags: scroll, performance, reanimated, useRef
+  - `skills/react-native-skills/rules/state-ground-truth.md` - title: State Must Represent Ground Truth impact: HIGH impactDescription: cleaner logic, easier debugging, single source of truth tags: state, derived-state, reanimated, hooks
+  - `skills/react-native-skills/rules/ui-expo-image.md` - title: Use expo-image for Optimized Images impact: HIGH impactDescription: memory efficiency, caching, blurhash placeholders, progressive loading tags: images, performance, expo-image, ui
+  - `skills/react-native-skills/rules/ui-image-gallery.md` - title: Use Galeria for Image Galleries and Lightbox impact: MEDIUM impactDescription: native shared element transitions, pinch-to-zoom, pan-to-close tags: images, gallery, lightbox, expo-image, ui
+  - `skills/react-native-skills/rules/ui-measure-views.md` - title: Measuring View Dimensions impact: MEDIUM impactDescription: synchronous measurement, avoid unnecessary re-renders tags: layout, measurement, onLayout, useLayoutEffect
+  - `skills/react-native-skills/rules/ui-menus.md` - title: Use Native Menus for Dropdowns and Context Menus impact: HIGH impactDescription: native accessibility, platform-consistent UX tags: user-interface, menus, context-menus, zeego, accessibility
+  - `skills/react-native-skills/rules/ui-native-modals.md` - title: Use Native Modals Over JS-Based Bottom Sheets impact: HIGH impactDescription: native performance, gestures, accessibility tags: modals, bottom-sheet, native, react-navigation
+  - `skills/react-native-skills/rules/ui-pressable.md` - title: Use Pressable Instead of Touchable Components impact: LOW impactDescription: modern API, more flexible tags: ui, pressable, touchable, gestures
+  - `skills/react-native-skills/rules/ui-safe-area-scroll.md` - title: Use contentInsetAdjustmentBehavior for Safe Areas impact: MEDIUM impactDescription: native safe area handling, no layout shifts tags: safe-area, scrollview, layout
+  - `skills/react-native-skills/rules/ui-scrollview-content-inset.md` - title: Use contentInset for Dynamic ScrollView Spacing impact: LOW impactDescription: smoother updates, no layout recalculation tags: scrollview, layout, contentInset, performance
+  - `skills/react-native-skills/rules/ui-styling.md` - title: Modern React Native Styling Patterns impact: MEDIUM impactDescription: consistent design, smoother borders, cleaner layouts tags: styling, css, layout, shadows, gradients
+  - `skills/react-useeffect/README.md` - The golden rule: **Effects are an escape hatch from React.** If you're not synchronizing with an external system, you probably don't need an Effect.
+  - `skills/react-useeffect/SKILL.md` - React useEffect best practices from official docs. Use when writing/reviewing useEffect, useState for derived values, data fetching, or state synchronization. Teaches when NOT to use Effect and better alternatives.
+  - `skills/react-useeffect/alternatives.md` - For values derived from props or state, just compute them:
+  - `skills/react-useeffect/anti-patterns.md` - Why it's bad**: Causes extra render pass with stale value, then re-renders with updated value.
+  - `skills/reducing-entropy/README.md` - This skill exists to counter the natural tendency of codebases to grow over time. It provides a framework for evaluating changes based on whether they **reduce the total amount of code** in the final codebase, not just m
+  - `skills/reducing-entropy/SKILL.md` - Manual-only skill for minimizing total codebase size. Only activate when explicitly requested by user. Measures success by final code amount, not effort. Bias toward deletion.
+  - `skills/reducing-entropy/adding-reference-mindsets.md` - One-sentence summary of the core insight and why it matters.
+  - `skills/reducing-entropy/references/data-over-abstractions.md` - 100 functions on one data structure beats 10 functions on 10 structures. Generic data and operations enable composition.
+  - `skills/reducing-entropy/references/design-is-taking-apart.md` - Design is taking things apart, not adding features. Separate concerns, remove dependencies, compose simple pieces.
+  - `skills/reducing-entropy/references/expensive-to-add-later.md` - Some things you Probably Are Gonna Need - know when YAGNI doesn't apply because retrofitting is dramatically more expensive than building it in from the start.
+  - `skills/reducing-entropy/references/simplicity-vs-easy.md` - Simple is objective (not intertwined), easy is subjective (familiar). Choose simple over easy for long-term maintainability.
+  - `skills/referral-program/SKILL.md` - "When the user wants to create, optimize, or analyze a referral program, affiliate program, or word-of-mouth strategy. Also use when the user mentions 'referral,' 'affiliate,' 'ambassador,' 'word of mouth,' 'viral loop,'
+  - `skills/referral-program/references/affiliate-programs.md` - Detailed guidance for building and managing affiliate programs.
+  - `skills/referral-program/references/program-examples.md` - Real-world examples of successful referral programs.
+  - `skills/requirements-clarity/README.md` - This skill helps you avoid costly misunderstandings and rework by ensuring requirements are crystal clear before implementation begins. It uses a 100-point scoring system to systematically identify gaps and guide you thr
+  - `skills/requirements-clarity/SKILL.md` - Clarify ambiguous requirements through focused dialogue before implementation. Use when requirements are unclear, features are complex (>2 days), or involve cross-team coordination. Ask two core questions - Why? (YAGNI c
+  - `skills/research/SKILL.md` - Conduct preliminary research on a topic and generate research outline. For academic research, benchmark research, technology selection, etc.
+  - `skills/research-add-fields/SKILL.md` - Add field definitions to existing research outline.
+  - `skills/research-add-items/SKILL.md` - Add items (research objects) to existing research outline.
+  - `skills/research-deep/SKILL.md` - Read research outline, launch independent agent for each item for deep research. Disable task output.
+  - `skills/research-report/SKILL.md` - Summarize deep research results into markdown report, cover all fields, skip uncertain values.
+  - `skills/schema-markup/SKILL.md` - When the user wants to add, fix, or optimize schema markup and structured data on their site. Also use when the user mentions "schema markup," "structured data," "JSON-LD," "rich snippets," "schema.org," "FAQ schema," "p
+  - `skills/schema-markup/references/schema-examples.md` - Complete JSON-LD examples for common schema types.
+  - `skills/seo-audit/SKILL.md` - When the user wants to audit, review, or diagnose SEO issues on their site. Also use when the user mentions "SEO audit," "technical SEO," "why am I not ranking," "SEO issues," "on-page SEO," "meta tags review," or "SEO h
+  - `skills/seo-audit/references/aeo-geo-patterns.md` - Reusable content block patterns optimized for answer engines and AI citation.
+  - `skills/seo-audit/references/ai-writing-detection.md` - Words, phrases, and punctuation patterns commonly associated with AI-generated text. Avoid these to ensure writing sounds natural and human.
+  - `skills/session-handoff/README.md` - The Session Handoff skill creates comprehensive handoff documents that enable fresh AI agents to seamlessly continue work with zero ambiguity. It solves the long-running agent context exhaustion problem by preserving com
+  - `skills/session-handoff/SKILL.md` - "Creates comprehensive handoff documents for seamless AI agent session transfers. Triggered when: (1) user requests handoff/memory/context save, (2) context window approaches capacity, (3) major task milestone completed,
+  - `skills/session-handoff/evals/model-expectations.md` - This document describes expected behavior differences across Claude models when using the session-handoff skill.
+  - `skills/session-handoff/evals/results-opus-baseline.md` - Date: 2025-11-27 Model: claude-opus-4-5-20251101 Skill version: session-handoff v1.0
+  - `skills/session-handoff/evals/test-scenarios.md` - Test these scenarios across Haiku, Sonnet, and Opus to verify skill effectiveness.
+  - `skills/session-handoff/references/handoff-template.md` - Use this template structure when creating handoff documents. The smart scaffold script will pre-fill metadata sections; complete the remaining sections based on session context.
+  - `skills/session-handoff/references/resume-checklist.md` - Follow this checklist when resuming work from a handoff document to ensure zero-ambiguity continuation.
+  - `skills/shadcn-base/README.md` - shadcn/ui Base UI edition: copy-and-own components built on Base UI primitives with render-based composition.
+  - `skills/shadcn-base/SKILL.md` - Use when you need the Base UI version of shadcn/ui components, docs, CLI, theming, forms, registries, or MCP guidance for shadcn’s Base UI stack.
+  - `skills/shadcn-base/references/blocks.md` - Blocks definition.
+  - `skills/shadcn-base/references/changelog.md` - Changelog definition.
+  - `skills/shadcn-base/references/cli.md` - Options: - -t, --template <template> (next, next-monorepo) - -b, --base-color <base-color> (neutral, gray, zinc, stone, slate) - -y, --yes (skip confirmation) - -f, --force (overwrite) - -c, --cwd <cwd> (working director
+  - `skills/shadcn-base/references/components-json.md` - Components Json definition.
+  - `skills/shadcn-base/references/components.md` - Use this list to jump to the official component docs. These links point to Base UI pages.
+  - `skills/shadcn-base/references/composition-pattern.md` - Composition Pattern definition.
+  - `skills/shadcn-base/references/dark-mode.md` - Dark Mode definition.
+  - `skills/shadcn-base/references/examples.md` - These examples are Base UI patterns. Do not use asChild.
+  - `skills/shadcn-base/references/forms-integrations.md` - Forms Integrations definition.
+  - `skills/shadcn-base/references/forms.md` - Use the Field family to compose accessible field blocks with labels, help text, and errors. See Base UI Field docs: https://ui.shadcn.com/docs/components/base/field See Base UI skill: skills/base-ui
+  - `skills/shadcn-base/references/installation.md` - Installation definition.
+  - `skills/shadcn-base/references/links.md` - Links definition.
+  - `skills/shadcn-base/references/mcp.md` - Mcp definition.
+  - `skills/shadcn-base/references/overview.md` - shadcn/ui is a set of open, composable components distributed as code, plus a CLI and registry system. It is not a traditional component library. It provides styled, copy-and-own components built on top of Base UI’s head
+  - `skills/shadcn-base/references/registry-schema.md` - Core fields: - $schema: schema URL. - name: registry name. - homepage: registry homepage. - items: array of registry items (must follow registry-item schema).
+  - `skills/shadcn-base/references/registry.md` - Registry definition.
+  - `skills/shadcn-base/references/theming.md` - Theming definition.
+  - `skills/ship-learn-next/README.md` - Most people consume educational content and never act on it. They watch tutorials, read articles, take courses - but never ship anything. This skill exists to break that cycle.
+  - `skills/ship-learn-next/SKILL.md` - Transform learning content (like YouTube transcripts, articles, tutorials) into actionable implementation plans using the Ship-Learn-Next framework. Use when user wants to turn advice, lessons, or educational content int
+  - `skills/signup-flow-cro/SKILL.md` - When the user wants to optimize signup, registration, account creation, or trial activation flows. Also use when the user mentions "signup conversions," "registration friction," "signup form optimization," "free trial si
+  - `skills/skill-judge/README.md` - Skill Judge exists to solve a critical problem: **most Skills waste tokens on knowledge Claude already has**.
+  - `skills/skill-judge/SKILL.md` - Evaluate Agent Skill design quality against official specifications and best practices. Use when reviewing, auditing, or improving SKILL.md files and skill packages. Provides multi-dimensional scoring and actionable impr
+  - `skills/skills/accessibility-compliance/SKILL.md` - Implement WCAG 2.2 compliant interfaces with mobile accessibility, inclusive design patterns, and assistive technology support. Use when auditing accessibility, implementing ARIA patterns, building for screen readers, or
+  - `skills/skills/accessibility-compliance/references/aria-patterns.md` - ARIA (Accessible Rich Internet Applications) provides attributes to enhance accessibility when native HTML semantics are insufficient. The first rule of ARIA is: don't use ARIA if native HTML can do the job.
+  - `skills/skills/accessibility-compliance/references/mobile-accessibility.md` - Mobile accessibility ensures apps work for users with disabilities on iOS and Android devices. This includes support for screen readers (VoiceOver, TalkBack), motor impairments, and various visual disabilities.
+  - `skills/skills/accessibility-compliance/references/wcag-guidelines.md` - The Web Content Accessibility Guidelines (WCAG) 2.2 provide recommendations for making web content more accessible. They are organized into four principles (POUR): Perceivable, Operable, Understandable, and Robust.
+  - `skills/skills/airflow-dag-patterns/SKILL.md` - Build production Apache Airflow DAGs with best practices for operators, sensors, testing, and deployment. Use when creating data pipelines, orchestrating workflows, or scheduling batch jobs.
+  - `skills/skills/angular-migration/SKILL.md` - Migrate from AngularJS to Angular using hybrid mode, incremental component rewriting, and dependency injection updates. Use when upgrading AngularJS applications, planning framework migrations, or modernizing legacy Angu
+  - `skills/skills/anti-reversing-techniques/SKILL.md` - Understand anti-reversing, obfuscation, and protection techniques encountered during software analysis. Use when analyzing protected binaries, bypassing anti-debugging for authorized analysis, or understanding software p
+  - `skills/skills/api-design-principles/SKILL.md` - Master REST and GraphQL API design principles to build intuitive, scalable, and maintainable APIs that delight developers. Use when designing new APIs, reviewing API specifications, or establishing API design standards.
+  - `skills/skills/api-design-principles/assets/api-design-checklist.md` - Api Design Checklist definition.
+  - `skills/skills/api-design-principles/references/graphql-schema-design.md` - Graphql Schema Design definition.
+  - `skills/skills/api-design-principles/references/rest-best-practices.md` - "API for managing users",
+  - `skills/skills/architecture-decision-records/SKILL.md` - Write and maintain Architecture Decision Records (ADRs) following best practices for technical decision documentation. Use when documenting significant technical decisions, reviewing past architectural choices, or establ
+  - `skills/skills/architecture-patterns/SKILL.md` - Implement proven backend architecture patterns including Clean Architecture, Hexagonal Architecture, and Domain-Driven Design. Use when architecting complex backend systems or refactoring existing applications for better
+  - `skills/skills/async-python-patterns/SKILL.md` - Master Python asyncio, concurrent programming, and async/await patterns for high-performance applications. Use when building async APIs, concurrent systems, or I/O-bound applications requiring non-blocking operations.
+  - `skills/skills/attack-tree-construction/SKILL.md` - Build comprehensive attack trees to visualize threat paths. Use when mapping attack scenarios, identifying defense gaps, or communicating security risks to stakeholders.
+  - `skills/skills/auth-implementation-patterns/SKILL.md` - Master authentication and authorization patterns including JWT, OAuth2, session management, and RBAC to build secure, scalable access control systems. Use when implementing auth systems, securing APIs, or debugging secur
+  - `skills/skills/backtesting-frameworks/SKILL.md` - Build robust backtesting systems for trading strategies with proper handling of look-ahead bias, survivorship bias, and transaction costs. Use when developing trading algorithms, validating strategies, or building backte
+  - `skills/skills/bash-defensive-patterns/SKILL.md` - Master defensive Bash programming techniques for production-grade scripts. Use when writing robust shell scripts, CI/CD pipelines, or system utilities requiring fault tolerance and safety.
+  - `skills/skills/bats-testing-patterns/SKILL.md` - Master Bash Automated Testing System (Bats) for comprehensive shell script testing. Use when writing tests for shell scripts, CI/CD pipelines, or requiring test-driven development of shell utilities.
+  - `skills/skills/bazel-build-optimization/SKILL.md` - Optimize Bazel builds for large-scale monorepos. Use when configuring Bazel, implementing remote execution, or optimizing build performance for enterprise codebases.
+  - `skills/skills/billing-automation/SKILL.md` - Build automated billing systems for recurring payments, invoicing, subscription lifecycle, and dunning management. Use when implementing subscription billing, automating invoicing, or managing recurring payment systems.
+  - `skills/skills/binary-analysis-patterns/SKILL.md` - Master binary analysis patterns including disassembly, decompilation, control flow analysis, and code pattern recognition. Use when analyzing executables, understanding compiled code, or performing static analysis on bin
+  - `skills/skills/changelog-automation/SKILL.md` - Automate changelog generation from commits, PRs, and releases following Keep a Changelog format. Use when setting up release workflows, generating release notes, or standardizing commit conventions.
+  - `skills/skills/code-review-excellence/SKILL.md` - Master effective code review practices to provide constructive feedback, catch bugs early, and foster knowledge sharing while maintaining team morale. Use when reviewing pull requests, establishing review standards, or m
+  - `skills/skills/competitive-landscape/SKILL.md` - This skill should be used when the user asks to "analyze competitors", "assess competitive landscape", "identify differentiation", "evaluate market positioning", "apply Porter's Five Forces", or requests competitive stra
+  - `skills/skills/context-driven-development/SKILL.md` - Use this skill when working with Conductor's context-driven development methodology, managing project context artifacts, or understanding the relationship between product.md, tech-stack.md, and workflow.md files.
+  - `skills/skills/cost-optimization/SKILL.md` - Optimize cloud costs through resource rightsizing, tagging strategies, reserved instances, and spending analysis. Use when reducing cloud expenses, analyzing infrastructure costs, or implementing cost governance policies
+  - `skills/skills/cqrs-implementation/SKILL.md` - Implement Command Query Responsibility Segregation for scalable architectures. Use when separating read and write models, optimizing query performance, or building event-sourced systems.
+  - `skills/skills/data-quality-frameworks/SKILL.md` - Implement data quality validation with Great Expectations, dbt tests, and data contracts. Use when building data quality pipelines, implementing validation rules, or establishing data contracts.
+  - `skills/skills/data-storytelling/SKILL.md` - Transform data into compelling narratives using visualization, context, and persuasive structure. Use when presenting analytics to stakeholders, creating data reports, or building executive presentations.
+  - `skills/skills/database-migration/SKILL.md` - Execute database migrations across ORMs and platforms with zero-downtime strategies, data transformation, and rollback procedures. Use when migrating databases, changing schemas, performing data transformations, or imple
+  - `skills/skills/dbt-transformation-patterns/SKILL.md` - Master dbt (data build tool) for analytics engineering with model organization, testing, documentation, and incremental strategies. Use when building data transformations, creating data models, or implementing analytics 
+  - `skills/skills/debugging-strategies/SKILL.md` - Master systematic debugging techniques, profiling tools, and root cause analysis to efficiently track down bugs across any codebase or technology stack. Use when investigating bugs, performance issues, or unexpected beha
+  - `skills/skills/defi-protocol-templates/SKILL.md` - Implement DeFi protocols with production-ready templates for staking, AMMs, governance, and lending systems. Use when building decentralized finance applications or smart contract protocols.
+  - `skills/skills/dependency-upgrade/SKILL.md` - Manage major dependency version upgrades with compatibility analysis, staged rollout, and comprehensive testing. Use when upgrading framework versions, updating major dependencies, or managing breaking changes in librari
+  - `skills/skills/deployment-pipeline-design/SKILL.md` - Design multi-stage CI/CD pipelines with approval gates, security checks, and deployment orchestration. Use when architecting deployment workflows, setting up continuous delivery, or implementing GitOps practices.
+  - `skills/skills/design-system-patterns/SKILL.md` - Build scalable design systems with design tokens, theming infrastructure, and component architecture patterns. Use when creating design tokens, implementing theme switching, building component libraries, or establishing 
+  - `skills/skills/design-system-patterns/references/component-architecture.md` - Well-architected components are reusable, composable, and maintainable. This guide covers patterns for building flexible component APIs that scale across design systems.
+  - `skills/skills/design-system-patterns/references/design-tokens.md` - Design tokens are the atomic values of a design system - the smallest pieces that define visual style. They bridge the gap between design and development by providing a single source of truth for colors, typography, spac
+  - `skills/skills/design-system-patterns/references/theming-architecture.md` - A robust theming system enables applications to support multiple visual appearances (light/dark modes, brand themes) while maintaining consistency and developer experience.
+  - `skills/skills/distributed-tracing/SKILL.md` - Implement distributed tracing with Jaeger and Tempo to track requests across microservices and identify performance bottlenecks. Use when debugging microservices, analyzing request flows, or implementing observability fo
+  - `skills/skills/dotnet-backend-patterns/SKILL.md` - Master C#/.NET backend development patterns for building robust APIs, MCP servers, and enterprise applications. Covers async/await, dependency injection, Entity Framework Core, Dapper, configuration, caching, and testing
+  - `skills/skills/dotnet-backend-patterns/references/dapper-patterns.md` - Advanced patterns for high-performance data access with Dapper in .NET.
+  - `skills/skills/dotnet-backend-patterns/references/ef-core-best-practices.md` - Performance optimization and best practices for EF Core in production applications.
+  - `skills/skills/e2e-testing-patterns/SKILL.md` - Master end-to-end testing with Playwright and Cypress to build reliable test suites that catch bugs, improve confidence, and enable fast deployment. Use when implementing E2E tests, debugging flaky tests, or establishing
+  - `skills/skills/embedding-strategies/SKILL.md` - Select and optimize embedding models for semantic search and RAG applications. Use when choosing embedding models, implementing chunking strategies, or optimizing embedding quality for specific domains.
+  - `skills/skills/employment-contract-templates/SKILL.md` - Create employment contracts, offer letters, and HR policy documents following legal best practices. Use when drafting employment agreements, creating HR policies, or standardizing employment documentation.
+  - `skills/skills/error-handling-patterns/SKILL.md` - Master error handling patterns across languages including exceptions, Result types, error propagation, and graceful degradation to build resilient applications. Use when implementing error handling, designing APIs, or im
+  - `skills/skills/event-store-design/SKILL.md` - Design and implement event stores for event-sourced systems. Use when building event sourcing infrastructure, choosing event store technologies, or implementing event persistence patterns.
+  - `skills/skills/fastapi-templates/SKILL.md` - Create production-ready FastAPI projects with async patterns, dependency injection, and comprehensive error handling. Use when building new FastAPI applications or setting up backend API projects.
+  - `skills/skills/gdpr-data-handling/SKILL.md` - Implement GDPR-compliant data handling with consent management, data subject rights, and privacy by design. Use when building systems that process EU personal data, implementing privacy controls, or conducting GDPR compl
+  - `skills/skills/git-advanced-workflows/SKILL.md` - Master advanced Git workflows including rebasing, cherry-picking, bisect, worktrees, and reflog to maintain clean history and recover from any situation. Use when managing complex Git histories, collaborating on feature 
+  - `skills/skills/github-actions-templates/SKILL.md` - Create production-ready GitHub Actions workflows for automated testing, building, and deploying applications. Use when setting up CI/CD with GitHub Actions, automating development workflows, or creating reusable workflow
+  - `skills/skills/gitops-workflow/SKILL.md` - Implement GitOps workflows with ArgoCD and Flux for automated, declarative Kubernetes deployments with continuous reconciliation. Use when implementing GitOps practices, automating Kubernetes deployments, or setting up d
+  - `skills/skills/gitops-workflow/references/argocd-setup.md` - Argocd Setup definition.
+  - `skills/skills/gitops-workflow/references/sync-policies.md` - Sync Policies definition.
+  - `skills/skills/go-concurrency-patterns/SKILL.md` - Master Go concurrency with goroutines, channels, sync primitives, and context. Use when building concurrent Go applications, implementing worker pools, or debugging race conditions.
+  - `skills/skills/godot-gdscript-patterns/SKILL.md` - Master Godot 4 GDScript patterns including signals, scenes, state machines, and optimization. Use when building Godot games, implementing game systems, or learning GDScript best practices.
+  - `skills/skills/grafana-dashboards/SKILL.md` - Create and manage production Grafana dashboards for real-time visualization of system and application metrics. Use when building monitoring dashboards, visualizing metrics, or creating operational observability interface
+  - `skills/skills/helm-chart-scaffolding/SKILL.md` - Design, organize, and manage Helm charts for templating and packaging Kubernetes applications with reusable configurations. Use when creating Helm charts, packaging Kubernetes applications, or implementing templated depl
+  - `skills/skills/helm-chart-scaffolding/references/chart-structure.md` - A Helm chart for my application # Required
+  - `skills/skills/hybrid-cloud-networking/SKILL.md` - Configure secure, high-performance connectivity between on-premises infrastructure and cloud platforms using VPN and dedicated connections. Use when building hybrid cloud architectures, connecting data centers to cloud, 
+  - `skills/skills/hybrid-search-implementation/SKILL.md` - Combine vector and keyword search for improved retrieval. Use when implementing RAG systems, building search engines, or when neither approach alone provides sufficient recall.
+  - `skills/skills/incident-runbook-templates/SKILL.md` - Create structured incident response runbooks with step-by-step procedures, escalation paths, and recovery actions. Use when building runbooks, responding to incidents, or establishing incident response procedures.
+  - `skills/skills/interaction-design/SKILL.md` - Design and implement microinteractions, motion design, transitions, and user feedback patterns. Use when adding polish to UI interactions, implementing loading states, or creating delightful user experiences.
+  - `skills/skills/interaction-design/references/animation-libraries.md` - The most popular React animation library with declarative API.
+  - `skills/skills/interaction-design/references/microinteraction-patterns.md` - Microinteraction Patterns definition.
+  - `skills/skills/interaction-design/references/scroll-animations.md` - Scroll Animations definition.
+  - `skills/skills/istio-traffic-management/SKILL.md` - Configure Istio traffic management including routing, load balancing, circuit breakers, and canary deployments. Use when implementing service mesh traffic policies, progressive delivery, or resilience patterns.
+  - `skills/skills/javascript-testing-patterns/SKILL.md` - Implement comprehensive testing strategies using Jest, Vitest, and Testing Library for unit tests, integration tests, and end-to-end testing with mocking, fixtures, and test-driven development. Use when writing JavaScrip
+  - `skills/skills/k8s-manifest-generator/references/deployment-spec.md` - A Deployment provides declarative updates for Pods and ReplicaSets. It manages the desired state of your application, handling rollouts, rollbacks, and scaling operations.
+  - `skills/skills/k8s-manifest-generator/references/service-spec.md` - A Service provides stable network endpoints for accessing Pods. Services enable loose coupling between microservices by providing service discovery and load balancing.
+  - `skills/skills/k8s-security-policies/SKILL.md` - Implement Kubernetes security policies including NetworkPolicy, PodSecurityPolicy, and RBAC for production-grade security. Use when securing Kubernetes clusters, implementing network isolation, or enforcing pod security 
+  - `skills/skills/k8s-security-policies/references/rbac-patterns.md` - Rbac Patterns definition.
+  - `skills/skills/kpi-dashboard-design/SKILL.md` - Design effective KPI dashboards with metrics selection, visualization best practices, and real-time monitoring patterns. Use when building business dashboards, selecting metrics, or designing data visualization layouts.
+  - `skills/skills/langchain-architecture/SKILL.md` - Design LLM applications using LangChain 1.x and LangGraph for agents, memory, and tool integration. Use when building LangChain applications, implementing AI agents, or creating complex LLM workflows.
+  - `skills/skills/linkerd-patterns/SKILL.md` - Implement Linkerd service mesh patterns for lightweight, security-focused service mesh deployments. Use when setting up Linkerd, configuring traffic policies, or implementing zero-trust networking with minimal overhead.
+  - `skills/skills/llm-evaluation/SKILL.md` - Implement comprehensive evaluation strategies for LLM applications using automated metrics, human feedback, and benchmarking. Use when testing LLM performance, measuring AI application quality, or establishing evaluation
+  - `skills/skills/market-sizing-analysis/SKILL.md` - This skill should be used when the user asks to "calculate TAM", "determine SAM", "estimate SOM", "size the market", "calculate market opportunity", "what's the total addressable market", or requests market sizing analys
+  - `skills/skills/market-sizing-analysis/examples/saas-market-sizing.md` - Complete TAM/SAM/SOM calculation for a B2B SaaS startup using bottom-up and top-down methodologies.
+  - `skills/skills/market-sizing-analysis/references/data-sources.md` - Curated list of credible sources for market research and sizing analysis.
+  - `skills/skills/memory-forensics/SKILL.md` - Master memory forensics techniques including memory acquisition, process analysis, and artifact extraction using Volatility and related tools. Use when analyzing memory dumps, investigating incidents, or performing malwa
+  - `skills/skills/memory-safety-patterns/SKILL.md` - Implement memory-safe programming with RAII, ownership, smart pointers, and resource management across Rust, C++, and C. Use when writing safe systems code, managing resources, or preventing memory bugs.
+  - `skills/skills/microservices-patterns/SKILL.md` - Design microservices architectures with service boundaries, event-driven communication, and resilience patterns. Use when building distributed systems, decomposing monoliths, or implementing microservices.
+  - `skills/skills/ml-pipeline-workflow/SKILL.md` - Build end-to-end MLOps pipelines from data preparation through model training, validation, and production deployment. Use when creating ML pipelines, implementing MLOps practices, or automating model training and deploym
+  - `skills/skills/mobile-android-design/SKILL.md` - Master Material Design 3 and Jetpack Compose patterns for building native Android apps. Use when designing Android interfaces, implementing Compose UI, or following Google's Material Design guidelines.
+  - `skills/skills/mobile-android-design/references/android-navigation.md` - Android Navigation definition.
+  - `skills/skills/mobile-android-design/references/compose-components.md` - Compose Components definition.
+  - `skills/skills/mobile-android-design/references/material3-theming.md` - Material3 Theming definition.
+  - `skills/skills/mobile-ios-design/SKILL.md` - Master iOS Human Interface Guidelines and SwiftUI patterns for building native iOS apps. Use when designing iOS interfaces, implementing SwiftUI views, or ensuring apps follow Apple's design principles.
+  - `skills/skills/mobile-ios-design/references/hig-patterns.md` - "Take your first photo to get started.",
+  - `skills/skills/mobile-ios-design/references/ios-navigation.md` - Ios Navigation definition.
+  - `skills/skills/mobile-ios-design/references/swiftui-components.md` - Text(error.localizedDescription)
+  - `skills/skills/modern-javascript-patterns/SKILL.md` - Master ES6+ features including async/await, destructuring, spread operators, arrow functions, promises, modules, iterators, generators, and functional programming patterns for writing clean, efficient JavaScript code. Us
+  - `skills/skills/monorepo-management/SKILL.md` - Master monorepo management with Turborepo, Nx, and pnpm workspaces to build efficient, scalable multi-package repositories with optimized builds and dependency management. Use when setting up monorepos, optimizing builds
+  - `skills/skills/mtls-configuration/SKILL.md` - Configure mutual TLS (mTLS) for zero-trust service-to-service communication. Use when implementing zero-trust networking, certificate management, or securing internal service communication.
+  - `skills/skills/multi-cloud-architecture/SKILL.md` - Design multi-cloud architectures using a decision framework to select and integrate services across AWS, Azure, and GCP. Use when building multi-cloud systems, avoiding vendor lock-in, or leveraging best-of-breed service
+  - `skills/skills/nextjs-app-router-patterns/SKILL.md` - Master Next.js 14+ App Router with Server Components, streaming, parallel routes, and advanced data fetching. Use when building Next.js applications, implementing SSR/SSG, or optimizing React Server Components.
+  - `skills/skills/nft-standards/SKILL.md` - Implement NFT standards (ERC-721, ERC-1155) with proper metadata handling, minting strategies, and marketplace integration. Use when creating NFT contracts, building NFT marketplaces, or implementing digital asset system
+  - `skills/skills/nodejs-backend-patterns/SKILL.md` - Build production-ready Node.js backend services with Express/Fastify, implementing middleware patterns, error handling, authentication, database integration, and API design best practices. Use when creating Node.js serve
+  - `skills/skills/nx-workspace-patterns/SKILL.md` - Configure and optimize Nx monorepo workspaces. Use when setting up Nx, configuring project boundaries, optimizing build caching, or implementing affected commands.
+  - `skills/skills/on-call-handoff-patterns/SKILL.md` - Master on-call shift handoffs with context transfer, escalation procedures, and documentation. Use when transitioning on-call responsibilities, documenting shift summaries, or improving on-call processes.
+  - `skills/skills/openapi-spec-generation/SKILL.md` - Generate and maintain OpenAPI 3.1 specifications from code, design-first specs, and validation patterns. Use when creating API documentation, generating SDKs, or ensuring API contract compliance.
+  - `skills/skills/paypal-integration/SKILL.md` - Integrate PayPal payment processing with support for express checkout, subscriptions, and refund management. Use when implementing PayPal payments, processing online transactions, or building e-commerce checkout flows.
+  - `skills/skills/pci-compliance/SKILL.md` - Implement PCI DSS compliance requirements for secure handling of payment card data and payment systems. Use when securing payment processing, achieving PCI compliance, or implementing payment card security measures.
+  - `skills/skills/postgresql/SKILL.md` - Design a PostgreSQL-specific schema. Covers best-practices, data types, indexing, constraints, performance patterns, and advanced features
+  - `skills/skills/postmortem-writing/SKILL.md` - Write effective blameless postmortems with root cause analysis, timelines, and action items. Use when conducting incident reviews, writing postmortem documents, or improving incident response processes.
+  - `skills/skills/projection-patterns/SKILL.md` - Build read models and projections from event streams. Use when implementing CQRS read sides, building materialized views, or optimizing query performance in event-sourced systems.
+  - `skills/skills/prometheus-configuration/SKILL.md` - Set up Prometheus for comprehensive metric collection, storage, and monitoring of infrastructure and applications. Use when implementing metrics collection, setting up monitoring infrastructure, or configuring alerting s
+  - `skills/skills/prompt-engineering-patterns/SKILL.md` - Master advanced prompt engineering techniques to maximize LLM performance, reliability, and controllability in production. Use when optimizing prompts, improving LLM outputs, or designing production prompt templates.
+  - `skills/skills/prompt-engineering-patterns/assets/prompt-template-library.md` - Prompt Template Library definition.
+  - `skills/skills/prompt-engineering-patterns/references/chain-of-thought.md` - Chain-of-Thought (CoT) prompting elicits step-by-step reasoning from LLMs, dramatically improving performance on complex reasoning, math, and logic tasks.
+  - `skills/skills/prompt-engineering-patterns/references/few-shot-learning.md` - Few-shot learning enables LLMs to perform tasks by providing a small number of examples (typically 1-10) within the prompt. This technique is highly effective for tasks requiring specific formats, styles, or domain knowl
+  - `skills/skills/prompt-engineering-patterns/references/prompt-optimization.md` - Prompt Optimization definition.
+  - `skills/skills/prompt-engineering-patterns/references/prompt-templates.md` - """,
+  - `skills/skills/prompt-engineering-patterns/references/system-prompts.md` - System prompts set the foundation for LLM behavior. They define role, expertise, constraints, and output expectations.
+  - `skills/skills/protocol-reverse-engineering/SKILL.md` - Master network protocol reverse engineering including packet analysis, protocol dissection, and custom protocol documentation. Use when analyzing network traffic, understanding proprietary protocols, or debugging network
+  - `skills/skills/python-anti-patterns/SKILL.md` - Common Python anti-patterns to avoid. Use as a checklist when reviewing code, before finalizing implementations, or when debugging issues that might stem from known bad practices.
+  - `skills/skills/python-background-jobs/SKILL.md` - Python background job patterns including task queues, workers, and event-driven architecture. Use when implementing async task processing, job queues, long-running operations, or decoupling work from request/response cyc
+  - `skills/skills/python-code-style/SKILL.md` - Python code style, linting, formatting, naming conventions, and documentation standards. Use when writing new code, reviewing style, configuring linters, writing docstrings, or establishing project standards.
+  - `skills/skills/python-configuration/SKILL.md` - Python configuration management via environment variables and typed settings. Use when externalizing config, setting up pydantic-settings, managing secrets, or implementing environment-specific behavior.
+  - `skills/skills/python-design-patterns/SKILL.md` - Python design patterns including KISS, Separation of Concerns, Single Responsibility, and composition over inheritance. Use when making architecture decisions, refactoring code structure, or evaluating when abstractions 
+  - `skills/skills/python-error-handling/SKILL.md` - Python error handling patterns including input validation, exception hierarchies, and partial failure handling. Use when implementing validation logic, designing exception strategies, handling batch processing failures, 
+  - `skills/skills/python-observability/SKILL.md` - Python observability patterns including structured logging, metrics, and distributed tracing. Use when adding logging, implementing metrics collection, setting up tracing, or debugging production systems.
+  - `skills/skills/python-packaging/SKILL.md` - Create distributable Python packages with proper project structure, setup.py/pyproject.toml, and publishing to PyPI. Use when packaging Python libraries, creating CLI tools, or distributing Python code.
+  - `skills/skills/python-performance-optimization/SKILL.md` - Profile and optimize Python code using cProfile, memory profilers, and performance best practices. Use when debugging slow Python code, optimizing bottlenecks, or improving application performance.
+  - `skills/skills/python-project-structure/SKILL.md` - Python project organization, module architecture, and public API design. Use when setting up new projects, organizing modules, defining public interfaces with __all__, or planning directory layouts.
+  - `skills/skills/python-resilience/SKILL.md` - Python resilience patterns including automatic retries, exponential backoff, timeouts, and fault-tolerant decorators. Use when adding retry logic, implementing timeouts, building fault-tolerant services, or handling tran
+  - `skills/skills/python-resource-management/SKILL.md` - Python resource management with context managers, cleanup patterns, and streaming. Use when managing connections, file handles, implementing cleanup logic, or building streaming responses with accumulated state.
+  - `skills/skills/python-testing-patterns/SKILL.md` - Implement comprehensive testing strategies with pytest, fixtures, mocking, and test-driven development. Use when writing Python tests, setting up test suites, or implementing testing best practices.
+  - `skills/skills/python-type-safety/SKILL.md` - Python type safety with type hints, generics, protocols, and strict type checking. Use when adding type annotations, implementing generic classes, defining structural interfaces, or configuring mypy/pyright.
+  - `skills/skills/rag-implementation/SKILL.md` - Build Retrieval-Augmented Generation (RAG) systems for LLM applications with vector databases and semantic search. Use when implementing knowledge-grounded AI, building document Q&A systems, or integrating LLMs with exte
+  - `skills/skills/react-modernization/SKILL.md` - Upgrade React applications to latest versions, migrate from class components to hooks, and adopt concurrent features. Use when modernizing React codebases, migrating to React Hooks, or upgrading to latest React versions.
+  - `skills/skills/react-native-architecture/SKILL.md` - Build production React Native apps with Expo, navigation, native modules, offline sync, and cross-platform patterns. Use when developing mobile apps, implementing native integrations, or architecting React Native project
+  - `skills/skills/react-native-design/SKILL.md` - Master React Native styling, navigation, and Reanimated animations for cross-platform mobile development. Use when building React Native apps, implementing navigation patterns, or creating performant animations.
+  - `skills/skills/react-native-design/references/navigation-patterns.md` - Navigation Patterns definition.
+  - `skills/skills/react-native-design/references/reanimated-patterns.md` - Reanimated Patterns definition.
+  - `skills/skills/react-native-design/references/styling-patterns.md` - Styling Patterns definition.
+  - `skills/skills/react-state-management/SKILL.md` - Master modern React state management with Redux Toolkit, Zustand, Jotai, and React Query. Use when setting up global state, managing server state, or choosing between state management solutions.
+  - `skills/skills/responsive-design/SKILL.md` - Implement modern responsive layouts using container queries, fluid typography, CSS Grid, and mobile-first breakpoint strategies. Use when building adaptive interfaces, implementing fluid layouts, or creating component-le
+  - `skills/skills/responsive-design/references/breakpoint-strategies.md` - Effective breakpoint strategies focus on content needs rather than device sizes. Modern responsive design uses fewer, content-driven breakpoints combined with fluid techniques.
+  - `skills/skills/responsive-design/references/container-queries.md` - Container queries enable component-based responsive design by allowing elements to respond to their container's size rather than the viewport. This paradigm shift makes truly reusable components possible.
+  - `skills/skills/responsive-design/references/fluid-layouts.md` - Fluid design creates smooth scaling experiences by using relative units and mathematical functions instead of fixed breakpoints. This approach reduces the need for media queries and creates more natural-feeling interface
+  - `skills/skills/risk-metrics-calculation/SKILL.md` - Calculate portfolio risk metrics including VaR, CVaR, Sharpe, Sortino, and drawdown analysis. Use when measuring portfolio risk, implementing risk limits, or building risk monitoring systems.
+  - `skills/skills/rust-async-patterns/SKILL.md` - Master Rust async programming with Tokio, async traits, error handling, and concurrent patterns. Use when building async Rust applications, implementing concurrent systems, or debugging async code.
+  - `skills/skills/saga-orchestration/SKILL.md` - Implement saga patterns for distributed transactions and cross-aggregate workflows. Use when coordinating multi-step business processes, handling compensating transactions, or managing long-running workflows.
+  - `skills/skills/sast-configuration/SKILL.md` - Configure Static Application Security Testing (SAST) tools for automated vulnerability detection in application code. Use when setting up security scanning, implementing DevSecOps practices, or automating code vulnerabil
+  - `skills/skills/screen-reader-testing/SKILL.md` - Test web applications with screen readers including VoiceOver, NVDA, and JAWS. Use when validating screen reader compatibility, debugging accessibility issues, or ensuring assistive technology support.
+  - `skills/skills/secrets-management/SKILL.md` - Implement secure secrets management for CI/CD pipelines using Vault, AWS Secrets Manager, or native platform solutions. Use when handling sensitive credentials, rotating secrets, or securing CI/CD environments.
+  - `skills/skills/security-requirement-extraction/SKILL.md` - Derive security requirements from threat models and business context. Use when translating threats into actionable requirements, creating security user stories, or building security test cases.
+  - `skills/skills/service-mesh-observability/SKILL.md` - Implement comprehensive observability for service meshes including distributed tracing, metrics, and visualization. Use when setting up mesh monitoring, debugging latency issues, or implementing SLOs for service communic
+  - `skills/skills/shellcheck-configuration/SKILL.md` - Master ShellCheck static analysis configuration and usage for shell script quality. Use when setting up linting infrastructure, fixing code issues, or ensuring script portability.
+  - `skills/skills/similarity-search-patterns/SKILL.md` - Implement efficient similarity search with vector databases. Use when building semantic search, implementing nearest neighbor queries, or optimizing retrieval performance.
+  - `skills/skills/slo-implementation/SKILL.md` - Define and implement Service Level Indicators (SLIs) and Service Level Objectives (SLOs) with error budgets and alerting. Use when establishing reliability targets, implementing SRE practices, or measuring service perfor
+  - `skills/skills/solidity-security/SKILL.md` - Master smart contract security best practices to prevent common vulnerabilities and implement secure Solidity patterns. Use when writing smart contracts, auditing existing contracts, or implementing security measures for
+  - `skills/skills/spark-optimization/SKILL.md` - Optimize Apache Spark jobs with partitioning, caching, shuffle optimization, and memory tuning. Use when improving Spark performance, debugging slow jobs, or scaling data processing pipelines.
+  - `skills/skills/sql-optimization-patterns/SKILL.md` - Master SQL query optimization, indexing strategies, and EXPLAIN analysis to dramatically improve database performance and eliminate slow queries. Use when debugging slow queries, designing database schemas, or optimizing
+  - `skills/skills/startup-financial-modeling/SKILL.md` - This skill should be used when the user asks to "create financial projections", "build a financial model", "forecast revenue", "calculate burn rate", "estimate runway", "model cash flow", or requests 3-5 year financial p
+  - `skills/skills/startup-metrics-framework/SKILL.md` - This skill should be used when the user asks about "key startup metrics", "SaaS metrics", "CAC and LTV", "unit economics", "burn multiple", "rule of 40", "marketplace metrics", or requests guidance on tracking and optimi
+  - `skills/skills/stride-analysis-patterns/SKILL.md` - Apply STRIDE methodology to systematically identify threats. Use when analyzing system security, conducting threat modeling sessions, or creating security documentation.
+  - `skills/skills/stripe-integration/SKILL.md` - Implement Stripe payment processing for robust, PCI-compliant payment flows including checkout, subscriptions, and webhooks. Use when integrating Stripe payments, building subscription systems, or implementing secure che
+  - `skills/skills/tailwind-design-system/SKILL.md` - Build scalable design systems with Tailwind CSS v4, design tokens, component libraries, and responsive patterns. Use when creating component libraries, implementing design systems, or standardizing UI patterns.
+  - `skills/skills/team-composition-analysis/SKILL.md` - This skill should be used when the user asks to "plan team structure", "determine hiring needs", "design org chart", "calculate compensation", "plan equity allocation", or requests organizational design and headcount pla
+  - `skills/skills/temporal-python-testing/SKILL.md` - Test Temporal workflows with pytest, time-skipping, and mocking strategies. Covers unit testing, integration testing, replay testing, and local development setup. Use when implementing Temporal workflow tests or debuggin
+  - `skills/skills/temporal-python-testing/resources/integration-testing.md` - Comprehensive patterns for testing workflows with mocked external dependencies, error injection, and complex scenarios.
+  - `skills/skills/temporal-python-testing/resources/local-setup.md` - Comprehensive guide for setting up local Temporal development environment with pytest integration and coverage tracking.
+  - `skills/skills/temporal-python-testing/resources/replay-testing.md` - Comprehensive guide for validating workflow determinism and ensuring safe code changes using replay testing.
+  - `skills/skills/temporal-python-testing/resources/unit-testing.md` - Focused guide for testing individual workflows and activities in isolation using WorkflowEnvironment and ActivityEnvironment.
+  - `skills/skills/terraform-module-library/SKILL.md` - Build reusable Terraform modules for AWS, Azure, and GCP infrastructure following infrastructure-as-code best practices. Use when creating infrastructure modules, standardizing cloud provisioning, or implementing reusabl
+  - `skills/skills/terraform-module-library/references/aws-modules.md` - Aws Modules definition.
+  - `skills/skills/threat-mitigation-mapping/SKILL.md` - Map identified threats to appropriate security controls and mitigations. Use when prioritizing security investments, creating remediation plans, or validating control effectiveness.
+  - `skills/skills/track-management/SKILL.md` - Use this skill when creating, managing, or working with Conductor tracks - the logical work units for features, bugs, and refactors. Applies to spec.md, plan.md, and track lifecycle operations.
+  - `skills/skills/typescript-advanced-types/SKILL.md` - Master TypeScript's advanced type system including generics, conditional types, mapped types, template literals, and utility types for building type-safe applications. Use when implementing complex type logic, creating r
+  - `skills/skills/unity-ecs-patterns/SKILL.md` - Master Unity ECS (Entity Component System) with DOTS, Jobs, and Burst for high-performance game development. Use when building data-oriented games, optimizing performance, or working with large entity counts.
+  - `skills/skills/uv-package-manager/SKILL.md` - Master the uv package manager for fast Python dependency management, virtual environments, and modern Python project workflows. Use when setting up Python projects, managing dependencies, or optimizing Python development
+  - `skills/skills/vector-index-tuning/SKILL.md` - Optimize vector index performance for latency, recall, and memory. Use when tuning HNSW parameters, selecting quantization strategies, or scaling vector search infrastructure.
+  - `skills/skills/visual-design-foundations/SKILL.md` - Apply typography, color theory, spacing systems, and iconography principles to create cohesive visual designs. Use when establishing design tokens, building style guides, or improving visual hierarchy and consistency.
+  - `skills/skills/visual-design-foundations/references/color-systems.md` - Using OKLCH for perceptually uniform color scales:
+  - `skills/skills/visual-design-foundations/references/spacing-iconography.md` - The 8-point grid is the industry standard for consistent spacing.
+  - `skills/skills/visual-design-foundations/references/typography-systems.md` - A modular scale creates harmonious relationships between font sizes using a mathematical ratio.
+  - `skills/skills/wcag-audit-patterns/SKILL.md` - Conduct WCAG 2.2 accessibility audits with automated testing, manual verification, and remediation guidance. Use when auditing websites for accessibility, fixing WCAG violations, or implementing accessible design pattern
+  - `skills/skills/web-component-design/SKILL.md` - Master React, Vue, and Svelte component patterns including CSS-in-JS, composition strategies, and reusable component architecture. Use when building UI component libraries, designing component APIs, or implementing front
+  - `skills/skills/web-component-design/references/accessibility-patterns.md` - Accessibility Patterns definition.
+  - `skills/skills/web-component-design/references/component-patterns.md` - Compound components share implicit state while allowing flexible composition.
+  - `skills/skills/web-component-design/references/css-styling-approaches.md` - | Approach | Runtime | Bundle Size | Learning Curve | Dynamic Styles | SSR | | ----------------- | ------- | -------------- | -------------- | -------------- | ----- | | CSS Modules | None | Minimal | Low | Limited | Yes
+  - `skills/skills/web3-testing/SKILL.md` - Test smart contracts comprehensively using Hardhat and Foundry with unit tests, integration tests, and mainnet forking. Use when testing Solidity contracts, setting up blockchain test suites, or validating DeFi protocols
+  - `skills/skills/workflow-orchestration-patterns/SKILL.md` - Design durable workflows with Temporal for distributed systems. Covers workflow vs activity separation, saga patterns, state management, and determinism constraints. Use when building long-running processes, distributed 
+  - `skills/skills/workflow-patterns/SKILL.md` - Use this skill when implementing tasks according to Conductor's TDD workflow, handling phase checkpoints, managing git commits for tasks, or understanding the verification protocol.
+  - `skills/social-content/SKILL.md` - "When the user wants help creating, scheduling, or optimizing social media content for LinkedIn, Twitter/X, Instagram, TikTok, Facebook, or other platforms. Also use when the user mentions 'LinkedIn post,' 'Twitter threa
+  - `skills/social-content/references/platforms.md` - Detailed strategies for each major social platform.
+  - `skills/social-content/references/post-templates.md` - Ready-to-use templates for different platforms and content types.
+  - `skills/social-content/references/reverse-engineering.md` - Instead of guessing what works, systematically analyze top-performing content in your niche and extract proven patterns.
+  - `skills/stitch-loop/README.md` - Teaches agents to iteratively build websites using Stitch with an autonomous baton-passing loop pattern.
+  - `skills/stitch-loop/SKILL.md` - Teaches agents to iteratively build websites using Stitch with an autonomous baton-passing loop pattern
+  - `skills/stitch-loop/examples/SITE.md` - stitch-project-id: 13534454087919359824 --- # Project Vision & Constitution
+  - `skills/stitch-loop/examples/next-prompt.md` - page: contact --- A warm, inviting contact page for Oakwood Furniture Co.
+  - `skills/stitch-loop/resources/baton-schema.md` - The baton file (next-prompt.md) is the communication mechanism between loop iterations. It tells the next agent what to build.
+  - `skills/stitch-loop/resources/site-template.md` - Use these templates when setting up a new project for the build loop.
+  - `skills/supabase-postgres-best-practices/AGENTS.md` - Postgres performance optimization and best practices from Supabase. Use this skill when writing, reviewing, or optimizing Postgres queries, schema designs, or database configurations.
+  - `skills/supabase-postgres-best-practices/README.md` - This skill contains Postgres performance optimization references optimized for AI agents and LLMs. It follows the [Agent Skills Open Standard](https://agentskills.io/).
+  - `skills/supabase-postgres-best-practices/SKILL.md` - Postgres performance optimization and best practices from Supabase. Use this skill when writing, reviewing, or optimizing Postgres queries, schema designs, or database configurations.
+  - `skills/supabase-postgres-best-practices/references/_contributing.md` - This document provides guidelines for creating effective Postgres best practice references that work well with AI agents and LLMs.
+  - `skills/supabase-postgres-best-practices/references/_sections.md` - This file defines the rule categories for Postgres best practices. Rules are automatically assigned to sections based on their filename prefix.
+  - `skills/supabase-postgres-best-practices/references/_template.md` - title: Clear, Action-Oriented Title (e.g., "Use Partial Indexes for Filtered Queries") impact: MEDIUM impactDescription: 5-20x query speedup for filtered queries tags: indexes, query-optimization, performance
+  - `skills/supabase-postgres-best-practices/references/advanced-full-text-search.md` - title: Use tsvector for Full-Text Search impact: MEDIUM impactDescription: 100x faster than LIKE, with ranking support tags: full-text-search, tsvector, gin, search
+  - `skills/supabase-postgres-best-practices/references/advanced-jsonb-indexing.md` - title: Index JSONB Columns for Efficient Querying impact: MEDIUM impactDescription: 10-100x faster JSONB queries with proper indexing tags: jsonb, gin, indexes, json
+  - `skills/supabase-postgres-best-practices/references/conn-idle-timeout.md` - title: Configure Idle Connection Timeouts impact: HIGH impactDescription: Reclaim 30-50% of connection slots from idle clients tags: connections, timeout, idle, resource-management
+  - `skills/supabase-postgres-best-practices/references/conn-limits.md` - title: Set Appropriate Connection Limits impact: CRITICAL impactDescription: Prevent database crashes and memory exhaustion tags: connections, max-connections, limits, stability
+  - `skills/supabase-postgres-best-practices/references/conn-pooling.md` - title: Use Connection Pooling for All Applications impact: CRITICAL impactDescription: Handle 10-100x more concurrent users tags: connection-pooling, pgbouncer, performance, scalability
+  - `skills/supabase-postgres-best-practices/references/conn-prepared-statements.md` - title: Use Prepared Statements Correctly with Pooling impact: HIGH impactDescription: Avoid prepared statement conflicts in pooled environments tags: prepared-statements, connection-pooling, transaction-mode
+  - `skills/supabase-postgres-best-practices/references/data-batch-inserts.md` - title: Batch INSERT Statements for Bulk Data impact: MEDIUM impactDescription: 10-50x faster bulk inserts tags: batch, insert, bulk, performance, copy
+  - `skills/supabase-postgres-best-practices/references/data-n-plus-one.md` - title: Eliminate N+1 Queries with Batch Loading impact: MEDIUM-HIGH impactDescription: 10-100x fewer database round trips tags: n-plus-one, batch, performance, queries
+  - `skills/supabase-postgres-best-practices/references/data-pagination.md` - title: Use Cursor-Based Pagination Instead of OFFSET impact: MEDIUM-HIGH impactDescription: Consistent O(1) performance regardless of page depth tags: pagination, cursor, keyset, offset, performance
+  - `skills/supabase-postgres-best-practices/references/data-upsert.md` - title: Use UPSERT for Insert-or-Update Operations impact: MEDIUM impactDescription: Atomic operation, eliminates race conditions tags: upsert, on-conflict, insert, update
+  - `skills/supabase-postgres-best-practices/references/lock-advisory.md` - title: Use Advisory Locks for Application-Level Locking impact: MEDIUM impactDescription: Efficient coordination without row-level lock overhead tags: advisory-locks, coordination, application-locks
+  - `skills/supabase-postgres-best-practices/references/lock-deadlock-prevention.md` - title: Prevent Deadlocks with Consistent Lock Ordering impact: MEDIUM-HIGH impactDescription: Eliminate deadlock errors, improve reliability tags: deadlocks, locking, transactions, ordering
+  - `skills/supabase-postgres-best-practices/references/lock-short-transactions.md` - title: Keep Transactions Short to Reduce Lock Contention impact: MEDIUM-HIGH impactDescription: 3-5x throughput improvement, fewer deadlocks tags: transactions, locking, contention, performance
+  - `skills/supabase-postgres-best-practices/references/lock-skip-locked.md` - title: Use SKIP LOCKED for Non-Blocking Queue Processing impact: MEDIUM-HIGH impactDescription: 10x throughput for worker queues tags: skip-locked, queue, workers, concurrency
+  - `skills/supabase-postgres-best-practices/references/monitor-explain-analyze.md` - title: Use EXPLAIN ANALYZE to Diagnose Slow Queries impact: LOW-MEDIUM impactDescription: Identify exact bottlenecks in query execution tags: explain, analyze, diagnostics, query-plan
+  - `skills/supabase-postgres-best-practices/references/monitor-pg-stat-statements.md` - title: Enable pg_stat_statements for Query Analysis impact: LOW-MEDIUM impactDescription: Identify top resource-consuming queries tags: pg-stat-statements, monitoring, statistics, performance
+  - `skills/supabase-postgres-best-practices/references/monitor-vacuum-analyze.md` - title: Maintain Table Statistics with VACUUM and ANALYZE impact: MEDIUM impactDescription: 2-10x better query plans with accurate statistics tags: vacuum, analyze, statistics, maintenance, autovacuum
+  - `skills/supabase-postgres-best-practices/references/query-composite-indexes.md` - title: Create Composite Indexes for Multi-Column Queries impact: HIGH impactDescription: 5-10x faster multi-column queries tags: indexes, composite-index, multi-column, query-optimization
+  - `skills/supabase-postgres-best-practices/references/query-covering-indexes.md` - title: Use Covering Indexes to Avoid Table Lookups impact: MEDIUM-HIGH impactDescription: 2-5x faster queries by eliminating heap fetches tags: indexes, covering-index, include, index-only-scan
+  - `skills/supabase-postgres-best-practices/references/query-index-types.md` - title: Choose the Right Index Type for Your Data impact: HIGH impactDescription: 10-100x improvement with correct index type tags: indexes, btree, gin, brin, hash, index-types
+  - `skills/supabase-postgres-best-practices/references/query-missing-indexes.md` - title: Add Indexes on WHERE and JOIN Columns impact: CRITICAL impactDescription: 100-1000x faster queries on large tables tags: indexes, performance, sequential-scan, query-optimization
+  - `skills/supabase-postgres-best-practices/references/query-partial-indexes.md` - title: Use Partial Indexes for Filtered Queries impact: HIGH impactDescription: 5-20x smaller indexes, faster writes and queries tags: indexes, partial-index, query-optimization, storage
+  - `skills/supabase-postgres-best-practices/references/schema-data-types.md` - title: Choose Appropriate Data Types impact: HIGH impactDescription: 50% storage reduction, faster comparisons tags: data-types, schema, storage, performance
+  - `skills/supabase-postgres-best-practices/references/schema-foreign-key-indexes.md` - title: Index Foreign Key Columns impact: HIGH impactDescription: 10-100x faster JOINs and CASCADE operations tags: foreign-key, indexes, joins, schema
+  - `skills/supabase-postgres-best-practices/references/schema-lowercase-identifiers.md` - title: Use Lowercase Identifiers for Compatibility impact: MEDIUM impactDescription: Avoid case-sensitivity bugs with tools, ORMs, and AI assistants tags: naming, identifiers, case-sensitivity, schema, conventions
+  - `skills/supabase-postgres-best-practices/references/schema-partitioning.md` - title: Partition Large Tables for Better Performance impact: MEDIUM-HIGH impactDescription: 5-20x faster queries and maintenance on large tables tags: partitioning, large-tables, time-series, performance
+  - `skills/supabase-postgres-best-practices/references/schema-primary-keys.md` - title: Select Optimal Primary Key Strategy impact: HIGH impactDescription: Better index locality, reduced fragmentation tags: primary-key, identity, uuid, serial, schema
+  - `skills/supabase-postgres-best-practices/references/security-privileges.md` - title: Apply Principle of Least Privilege impact: MEDIUM impactDescription: Reduced attack surface, better audit trail tags: privileges, security, roles, permissions
+  - `skills/supabase-postgres-best-practices/references/security-rls-basics.md` - title: Enable Row Level Security for Multi-Tenant Data impact: CRITICAL impactDescription: Database-enforced tenant isolation, prevent data leaks tags: rls, row-level-security, multi-tenant, security
+  - `skills/supabase-postgres-best-practices/references/security-rls-performance.md` - title: Optimize RLS Policies for Performance impact: HIGH impactDescription: 5-10x faster RLS queries with proper patterns tags: rls, performance, security, optimization
+  - `skills/theatre-js/README.md` - Motion design editor and animation library for the web.
+  - `skills/theatre-js/SKILL.md` - Use when implementing motion design, timeline animations, visual animation editors, animating Three.js/R3F scenes, creating keyframe animations, or using Theatre.js, @theatre/core, @theatre/studio, @theatre/r3f, theatric
+  - `skills/theatre-js/references/01-core.md` - Timeline with keyframes and playback control.
+  - `skills/theatre-js/references/02-prop-types.md` - types.string('', { multiline: true })
+  - `skills/theatre-js/references/03-studio.md` - Isolate a section of the timeline:
+  - `skills/theatre-js/references/04-react-integration.md` - For quick prototyping without full Theatre.js setup:
+  - `skills/theatre-js/references/05-r3f-integration.md` - Wraps your scene to connect to Theatre.js:
+  - `skills/theatre-js/references/06-production.md` - Ensure Studio is not included in production bundle:
+  - `skills/three-js/README.md` - Comprehensive Three.js reference for 3D web graphics.
+  - `skills/three-js/SKILL.md` - |
+  - `skills/three-js/references/01-fundamentals.md` - Core concepts: Scene, Renderer, Object3D hierarchy, coordinate system, and essential patterns.
+  - `skills/three-js/references/02-geometry.md` - Creating shapes, BufferGeometry, custom geometry, instancing, points, and lines.
+  - `skills/three-js/references/03-materials.md` - All material types, PBR workflow, shader materials, and common properties.
+  - `skills/three-js/references/04-textures.md` - Texture loading, types, configuration, UV mapping, render targets, and environment maps.
+  - `skills/three-js/references/05-lighting.md` - Light types, shadows, IBL, light probes, and common lighting setups.
+  - `skills/three-js/references/06-cameras.md` - Camera types, projection, viewport, and camera techniques.
+  - `skills/three-js/references/07-loaders.md` - Asset loading: GLTF, textures, HDR, compression, async patterns, and error handling.
+  - `skills/three-js/references/08-animation.md` - Keyframe animation, skeletal animation, morph targets, blending, and procedural motion.
+  - `skills/three-js/references/09-interaction.md` - Raycasting, mouse/touch input, selection, drag, and coordinate conversion.
+  - `skills/three-js/references/10-controls.md` - Camera controls: OrbitControls, FlyControls, PointerLockControls, and more.
+  - `skills/three-js/references/11-shaders.md` - Custom GLSL shaders, uniforms, varyings, common patterns, and shader modification.
+  - `skills/three-js/references/12-postprocessing.md` - EffectComposer, bloom, DOF, SSAO, custom effects, and screen-space shaders.
+  - `skills/three-js/references/13-math.md` - Vector3, Matrix4, Quaternion, Euler, Color, Box3, Sphere, Plane, and MathUtils.
+  - `skills/three-js/references/14-performance.md` - Instancing, LOD, culling, batching, profiling, memory management, and mobile optimization.
+  - `skills/three-js/references/15-node-materials.md` - Three Shading Language - node-based material system for custom shaders.
+  - `skills/three-js/references/16-physics-vr.md` - Physics engines integration and WebXR for virtual/augmented reality.
+  - `skills/three-js/references/17-webgpu.md` - Modern GPU API for next-generation rendering and compute shaders.
+  - `skills/three-js/references/18-patterns.md` - Architecture patterns, asset management, state management, cleanup, and best practices.
+  - `skills/threejs-animation/SKILL.md` - Three.js animation - keyframe animation, skeletal animation, morph targets, animation mixing. Use when animating objects, playing GLTF animations, creating procedural motion, or blending animations.
+  - `skills/threejs-fundamentals/SKILL.md` - Three.js scene setup, cameras, renderer, Object3D hierarchy, coordinate systems. Use when setting up 3D scenes, creating cameras, configuring renderers, managing object hierarchies, or working with transforms.
+  - `skills/threejs-geometry/SKILL.md` - Three.js geometry creation - built-in shapes, BufferGeometry, custom geometry, instancing. Use when creating 3D shapes, working with vertices, building custom meshes, or optimizing with instanced rendering.
+  - `skills/threejs-interaction/SKILL.md` - Three.js interaction - raycasting, controls, mouse/touch input, object selection. Use when handling user input, implementing click detection, adding camera controls, or creating interactive 3D experiences.
+  - `skills/threejs-lighting/SKILL.md` - Three.js lighting - light types, shadows, environment lighting. Use when adding lights, configuring shadows, setting up IBL, or optimizing lighting performance.
+  - `skills/threejs-loaders/SKILL.md` - Three.js asset loading - GLTF, textures, images, models, async patterns. Use when loading 3D models, textures, HDR environments, or managing loading progress.
+  - `skills/threejs-materials/SKILL.md` - Three.js materials - PBR, basic, phong, shader materials, material properties. Use when styling meshes, working with textures, creating custom shaders, or optimizing material performance.
+  - `skills/threejs-postprocessing/SKILL.md` - Three.js post-processing - EffectComposer, bloom, DOF, screen effects. Use when adding visual effects, color grading, blur, glow, or creating custom screen-space shaders.
+  - `skills/threejs-shaders/SKILL.md` - Three.js shaders - GLSL, ShaderMaterial, uniforms, custom effects. Use when creating custom visual effects, modifying vertices, writing fragment shaders, or extending built-in materials.
+  - `skills/threejs-textures/SKILL.md` - Three.js textures - texture types, UV mapping, environment maps, texture settings. Use when working with images, UV coordinates, cubemaps, HDR environments, or texture optimization.
+  - `skills/ui-ux-pro-max/templates/base/quick-reference.md` - Reference these guidelines when: - Designing new UI components or pages - Choosing color palettes and typography - Reviewing code for UX issues - Building landing pages or dashboards - Implementing accessibility requirem
+  - `skills/ui-ux-pro-max/templates/base/skill-content.md` - If Python is not installed, install it based on user's OS:
+  - `skills/web-design-guidelines/SKILL.md` - Review UI code for Web Interface Guidelines compliance. Use when asked to "review my UI", "check accessibility", "audit design", "review UX", or "check my site against best practices".
+  - `skills/web-to-markdown/README.md` - This skill enables Claude Code to convert web pages (including JavaScript-rendered content) into clean, readable Markdown format by leveraging the web2md CLI tool. It's particularly useful for extracting article content,
+  - `skills/web-to-markdown/SKILL.md` - "Use ONLY when the user explicitly says: 'use the skill web-to-markdown ...' (or 'use a skill web-to-markdown ...'). Converts webpage URLs to clean Markdown by calling the local web2md CLI (Puppeteer + Readability), suit
+  - `skills/writing-clearly-and-concisely/README.md` - This skill helps you write better prose for human readers. It draws from two sources:
+  - `skills/writing-clearly-and-concisely/SKILL.md` - Use when writing prose humans will read—documentation, commit messages, error messages, explanations, reports, or UI text. Applies Strunk's timeless rules for clearer, stronger, more professional writing.
+  - `skills/writing-clearly-and-concisely/elements-of-style/01-introductory.md` - This handbook summarizes the essentials of plain English style. It focuses on the rules of usage and principles of composition most often broken, offering a compact alternative to exhaustive manuals. Master the guidance 
+  - `skills/writing-clearly-and-concisely/elements-of-style/02-elementary-rules-of-usage.md` - Follow this rule whatever the final consonant. Thus write,
+  - `skills/writing-clearly-and-concisely/elements-of-style/03-elementary-principles-of-composition.md` - If the subject on which you are writing is of slight extent, or if you intend to treat it very briefly, there may be no need of subdividing it into topics. Thus a brief description, a brief summary of a literary work, a 
+  - `skills/writing-clearly-and-concisely/elements-of-style/04-a-few-matters-of-form.md` - Headings.** Leave a blank line, or its equivalent in space, after the title or heading of a manuscript. On succeeding pages, if using ruled paper, begin on the first line.
+  - `skills/writing-clearly-and-concisely/elements-of-style/05-words-and-expressions-commonly-misused.md` - (Some of the forms here listed, as *like I did*, are downright bad English; others, as the split infinitive, have their defenders, but are in such general disfavor that it is at least inadvisable to use them; still other
+  - `skills/writing-clearly-and-concisely/signs-of-ai-writing.md` - [![A screenshot of ChatGPT reading: "[header] Legacy & Interpretation [body] The "Black Hole Edition" is not just a meme — it's a celebration of grassroots car culture, where ideas are limitless and fun is more important
+- **Plugins**
+  - `plugins/agents/marketplace.json` - claude-code-workflows
+- **Commands**
+  - `command/baseline-ui.md` - Enforces an opinionated UI baseline to prevent AI-generated interface slop.
+  - `command/checklist.md` - Create or update website-checklist.md as an actionable website launch checklist.
+  - `command/cleanup.md` - Perform a comprehensive project cleanup, optimization, and standardization pass.
+  - `command/generate-image.md` - Generate images using Gemini 3 Pro Image model
+  - `command/gsap.md` - Analyze website and generate comprehensive GSAP animations. Use when you want to enhance a site with scroll effects, text animations, SVG effects, layout transitions, drag interactions, or any GSAP-based motion.
+  - `command/gsd-add-phase.md` - Add phase to end of current milestone in roadmap
+  - `command/gsd-add-todo.md` - Capture idea or task as todo from current conversation context
+  - `command/gsd-audit-milestone.md` - Audit milestone completion against original intent before archiving
+  - `command/gsd-check-todos.md` - List pending todos and select one to work on
+  - `command/gsd-complete-milestone.md` - Archive completed milestone and prepare for next version
+  - `command/gsd-debug.md` - Systematic debugging with persistent state across context resets
+  - `command/gsd-discuss-phase.md` - Gather phase context through adaptive questioning before planning
+  - `command/gsd-execute-phase.md` - Execute all plans in a phase with wave-based parallelization
+  - `command/gsd-help.md` - Show available GSD commands and usage guide
+  - `command/gsd-insert-phase.md` - Insert urgent work as decimal phase (e.g., 72.1) between existing phases
+  - `command/gsd-join-discord.md` - Join the GSD Discord community
+  - `command/gsd-list-phase-assumptions.md` - Surface Claude's assumptions about a phase approach before planning
+  - `command/gsd-map-codebase.md` - Analyze codebase with parallel mapper agents to produce .planning/codebase/ documents
+  - `command/gsd-new-milestone.md` - Start a new milestone cycle — update PROJECT.md and route to requirements
+  - `command/gsd-new-project.md` - Initialize a new project with deep context gathering and PROJECT.md
+  - `command/gsd-pause-work.md` - Create context handoff when pausing work mid-phase
+  - `command/gsd-plan-milestone-gaps.md` - Create phases to close all gaps identified by milestone audit
+  - `command/gsd-plan-phase.md` - Create detailed execution plan for a phase (PLAN.md) with verification loop
+  - `command/gsd-progress.md` - Check project progress, show context, and route to next action (execute or plan)
+  - `command/gsd-quick.md` - Execute a quick task with GSD guarantees (atomic commits, state tracking) but skip optional agents
+  - `command/gsd-remove-phase.md` - Remove a future phase from roadmap and renumber subsequent phases
+  - `command/gsd-research-phase.md` - Research how to implement a phase (standalone - usually use /gsd-plan-phase instead)
+  - `command/gsd-resume-work.md` - Resume work from previous session with full context restoration
+  - `command/gsd-set-profile.md` - Switch model profile for GSD agents (quality/balanced/budget)
+  - `command/gsd-settings.md` - Configure GSD workflow toggles and model profile
+  - `command/gsd-update.md` - Update GSD to latest version with changelog display
+  - `command/gsd-verify-work.md` - Validate built features through conversational UAT
+  - `command/microck-readme.md` - Format README.md or technical documentation in the Microck visual layout.
+  - `command/microck-research.md` - Launches the Microck Deep Researcher for exhaustive, autonomous research on a topic.
+  - `command/microck-writing.md` - Transform any text content into the blunt, lowercase Microck engineering style.
+  - `command/naming.md` - Generate strong names for developer tools using structured naming patterns.
+  - `command/opentui.md` - Load OpenTUI skill and get contextual guidance for building terminal user interfaces
+  - `command/rams.md` - Run accessibility and visual design review
+  - `command/seo.md` - Use when optimizing content for search engines, including keyword research, internal linking, and meta tags.
+  - `command/ui-skills.md` - Ui Skills definition.
+  - `command/web-interface-guidelines.md` - Review UI code for Vercel Web Interface Guidelines compliance
+  - `command/working-paper.md` - Activates the working-paper skill for mathematical research and LaTeX drafting.
+- **Agents**
+  - `agents/gsd-codebase-mapper.md` - Explores codebase and writes structured analysis documents. Spawned by map-codebase with a focus area (tech, arch, quality, concerns). Writes documents directly to reduce orchestrator context load.
+  - `agents/gsd-debugger.md` - Investigates bugs using scientific method, manages debug sessions, handles checkpoints. Spawned by /gsd-debug orchestrator.
+  - `agents/gsd-executor.md` - Executes GSD plans with atomic commits, deviation handling, checkpoint protocols, and state management. Spawned by execute-phase orchestrator or execute-plan command.
+  - `agents/gsd-integration-checker.md` - Verifies cross-phase integration and E2E flows. Checks that phases connect properly and user workflows complete end-to-end.
+  - `agents/gsd-phase-researcher.md` - Researches how to implement a phase before planning. Produces RESEARCH.md consumed by gsd-planner. Spawned by /gsd-plan-phase orchestrator.
+  - `agents/gsd-plan-checker.md` - Verifies plans will achieve phase goal before execution. Goal-backward analysis of plan quality. Spawned by /gsd-plan-phase orchestrator.
+  - `agents/gsd-planner.md` - Creates executable phase plans with task breakdown, dependency analysis, and goal-backward verification. Spawned by /gsd-plan-phase orchestrator.
+  - `agents/gsd-project-researcher.md` - Researches domain ecosystem before roadmap creation. Produces files in .planning/research/ consumed during roadmap creation. Spawned by /gsd-new-project or /gsd-new-milestone orchestrators.
+  - `agents/gsd-research-synthesizer.md` - Synthesizes research outputs from parallel researcher agents into SUMMARY.md. Spawned by /gsd-new-project after 4 researcher agents complete.
+  - `agents/gsd-roadmapper.md` - Creates project roadmaps with phase breakdown, requirement mapping, success criteria derivation, and coverage validation. Spawned by /gsd-new-project orchestrator.
+  - `agents/gsd-verifier.md` - Verifies phase goal achievement through goal-backward analysis. Checks codebase delivers what phase promised, not just that tasks completed. Creates VERIFICATION.md report.
+  - `agents/microck-researcher.md` - An autonomous deep-research agent that recursively explores topics, manages its own planning files, and runs for extended periods to gather exhaustive information.
+  - `agents/web-search-modules/academic-papers.md` - Academic Papers definition.
+  - `agents/web-search-modules/chinese-tech.md` - Chinese Tech definition.
+  - `agents/web-search-modules/general-web.md` - General Web definition.
+  - `agents/web-search-modules/github-debug.md` - > 从 web-search-agent.md 提取的 GitHub/Debug 专用策略
+  - `agents/web-search-modules/stackoverflow.md` - Stackoverflow definition.
+  - `agents/web-search.md` - Use this agent when you need to research information on the internet, particularly for debugging issues, finding solutions to technical problems, or gathering comprehensive information from multiple sources. This agent e
+- **Themes**
+  - `themes/og-steam.json` - { "$schema": "https://opencode.ai/theme.json", "defs": { "darkGreenBG": "#3e4637", "greenBG": "#4c5844", "lightGreenBG": "#5a6a50", "borderDark": "#282e22", "borderBright": "#808080", "offWhite": "#d8ded3", "maize": "#c4
+- **MCP Servers**
+  - `agent-browser-mcp` - MCP server powered by `npx`.
+  - `aws-ec2-windows` - MCP server powered by `/home/ubuntu/.opencode/mcp/awsec2/server.sh`.
+  - `better-auth` - MCP server powered by `npx`.
+  - `context7` - Library and framework docs MCP for up-to-date API references and examples.
+  - `discord-py-self` - MCP server powered by `/home/linuxbrew/.linuxbrew/bin/python3`.
+  - `font-mcp` - MCP server powered by `node`.
+  - `grep-app` - MCP server powered by `npx`.
+  - `gsap` - MCP server powered by `npx`.
+  - `kagi-search` - Private web search MCP for high-quality, ad-free search results.
+  - `mintlify` - Remote MCP endpoint at `https://mintlify.com/docs/mcp`.
+  - `motion` - MCP server powered by `npx`.
+  - `n8n-mcp` - MCP server powered by `npx`.
+  - `next-devtools` - MCP server powered by `npx`.
+  - `perplexity-webui` - Perplexity research MCP for live web answers and deep research.
+  - `qmd` - Local markdown knowledge search MCP for indexed notes and docs.
+  - `reactbits` - MCP server powered by `npx`.
+  - `registry-directory-mcp` - MCP server powered by `node`.
+  - `ssh-ec2-tailscale` - MCP server powered by `npx`.
+  - `ssh-local-dev` - MCP server powered by `npx`.
+  - `ssh-nas` - MCP server powered by `npx`.
+  - `ssh-oracle` - MCP server powered by `npx`.
+  - `ssh-usa` - MCP server powered by `npx`.
+  - `stitch` - Stitch UI generation MCP for project/screen creation and editing.
+  - `supabase` - Remote MCP endpoint at `https://mcp.supabase.com/mcp?project_ref=jigtlcgecidrctqelsxa&features=storage%2Cbranching%2Cfunctions%2Cdevelopment%2Cdebugging%2Cdatabase%2Caccount%2Cdocs`.
+  - `vercel` - Vercel MCP for deployments, logs, and project/runtime diagnostics.
+<!-- OPENDOTS_AUTO_CONTENTS_END -->
+
 ## Safety
 
 This bundle is scanned by OpenDots. Review safety badges and file previews before installing.
